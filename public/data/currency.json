@@ -1,0 +1,28 @@
+{
+  "currencies": [
+    {
+      "code": "EUR",
+      "sign": "€"
+    },
+    {
+      "code": "USD",
+      "sign": "$"
+    },
+    {
+      "code": "PLN",
+      "sign": "zł"
+    },
+    {
+      "code": "CZK",
+      "sign": "Kč"
+    },
+    {
+      "code": "UAH",
+      "sign": "₴"
+    },
+    {
+      "code": "GBP",
+      "sign": "£"
+    }
+  ]
+}

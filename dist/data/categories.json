@@ -1,0 +1,156 @@
+{
+  "income": [
+    {
+      "title": "Salary",
+      "img": "/img/taxes_category.svg",
+      "color": "#98b778"
+    },
+    {
+      "title": "Bonus",
+      "img": "/img/taxes_category.svg",
+      "color": "#c7c88b"
+    },
+    {
+      "title": "Investments",
+      "img": "/img/taxes_category.svg",
+      "color": "#74b4ba"
+    },
+    {
+      "title": "Revenue",
+      "img": "/img/taxes_category.svg",
+      "color": "#87bbce"
+    },
+    {
+      "title": "Fee",
+      "img": "/img/taxes_category.svg",
+      "color": "#73a69b"
+    },
+    {
+      "title": "Dividends",
+      "img": "/img/taxes_category.svg",
+      "color": "#8aa885"
+    },
+    {
+      "title": "Pension",
+      "img": "/img/taxes_category.svg",
+      "color": "#a3c0a0"
+    },
+    {
+      "title": "Inheritance",
+      "img": "/img/taxes_category.svg",
+      "color": "#b7bec0"
+    },
+    {
+      "title": "Rent Compensation",
+      "img": "/img/taxes_category.svg",
+      "color": "#abc4aa"
+    },
+    {
+      "title": "Other",
+      "img": "/img/taxes_category.svg",
+      "color": "#d5c774"
+    }
+  ],
+  "expense": [
+    {
+      "title": "Taxes",
+      "img": "/img/taxes_category.svg",
+      "color": "#cb8169"
+    },
+    {
+      "title": "Accounting",
+      "img": "/img/taxes_category.svg",
+      "color": "#9d8572"
+    },
+    {
+      "title": "Insurance",
+      "img": "/img/taxes_category.svg",
+      "color": "#b089bc"
+    },
+    {
+      "title": "Groceries",
+      "img": "/img/taxes_category.svg",
+      "color": "#cabd79"
+    },
+    {
+      "title": "Rent",
+      "img": "/img/taxes_category.svg",
+      "color": "#d4c580"
+    },
+    {
+      "title": "Utilities",
+      "img": "/img/taxes_category.svg",
+      "color": "#d6ac7a"
+    },
+    {
+      "title": "Household",
+      "img": "/img/taxes_category.svg",
+      "color": "#bfd97b"
+    },
+    {
+      "title": "Services",
+      "img": "/img/taxes_category.svg",
+      "color": "#d9b178"
+    },
+    {
+      "title": "Beauty",
+      "img": "/img/taxes_category.svg",
+      "color": "#e09aa8"
+    },
+    {
+      "title": "Health",
+      "img": "/img/taxes_category.svg",
+      "color": "#d47b90"
+    },
+    {
+      "title": "Sports",
+      "img": "/img/taxes_category.svg",
+      "color": "#89ad8b"
+    },
+    {
+      "title": "Cafe",
+      "img": "/img/taxes_category.svg",
+      "color": "#d89176"
+    },
+    {
+      "title": "Entertainment",
+      "img": "/img/taxes_category.svg",
+      "color": "#a494d2"
+    },
+    {
+      "title": "Clothing",
+      "img": "/img/taxes_category.svg",
+      "color": "#aec4dc"
+    },
+    {
+      "title": "Travel",
+      "img": "/img/taxes_category.svg",
+      "color": "#89c1ba"
+    },
+    {
+      "title": "Loan",
+      "img": "/img/taxes_category.svg",
+      "color": "#b47068"
+    },
+    {
+      "title": "Transport",
+      "img": "/img/taxes_category.svg",
+      "color": "#7fb2c3"
+    },
+    {
+      "title": "Renovation",
+      "img": "/img/taxes_category.svg",
+      "color": "#a59788"
+    },
+    {
+      "title": "Education",
+      "img": "/img/taxes_category.svg",
+      "color": "#9ca4c7"
+    },
+    {
+      "title": "Other",
+      "img": "/img/taxes_category.svg",
+      "color": "#c2c2c2"
+    }
+  ]
+}

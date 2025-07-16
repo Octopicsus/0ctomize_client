@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<circle style="fill:#324A5E;" cx="256" cy="256" r="256"/>
+<path style="fill:#2B3B4E;" d="M267.773,511.721c129.745-5.875,234.318-108.316,243.553-237.158L398.222,162.302
+	c-0.819,0.819-85.907,73.011-85.907,73.011S119.001,362.208,117.981,363.229L267.773,511.721z"/>
+<polygon style="fill:#FFFFFF;" points="349.698,113.778 208.593,113.778 208.593,398.222 398.222,398.222 398.222,162.302 "/>
+<polygon style="fill:#E6F3FF;" points="398.222,162.302 349.698,113.778 295.076,113.778 295.076,398.222 398.222,398.222 "/>
+<path style="fill:#F9B54C;" d="M227.269,366.618H126.707c-7.14,0-12.929-5.789-12.929-12.929V189.918
+	c0-7.14,5.789-12.929,12.929-12.929h100.562c7.14,0,12.929,5.789,12.929,12.929v163.771
+	C240.197,360.829,234.41,366.618,227.269,366.618z"/>
+<path style="fill:#F4A200;" d="M227.269,176.988H176.7v189.63h50.567c7.14,0,12.929-5.787,12.929-12.929V189.918
+	C240.197,182.775,234.41,176.988,227.269,176.988z"/>
+<rect x="125.276" y="188.475" style="fill:#B5F1F4;" width="103.434" height="42.139"/>
+<rect x="176.7" y="188.475" style="fill:#84DBFF;" width="52.01" height="42.139"/>
+<g>
+	<rect x="125.276" y="247.863" style="fill:#E6F3FF;" width="20.113" height="17.961"/>
+	<rect x="125.276" y="275.618" style="fill:#E6F3FF;" width="20.113" height="17.961"/>
+	<rect x="125.276" y="302.563" style="fill:#E6F3FF;" width="20.113" height="17.961"/>
+	<rect x="125.276" y="329.507" style="fill:#E6F3FF;" width="20.113" height="17.961"/>
+	<rect x="153.048" y="247.863" style="fill:#E6F3FF;" width="20.113" height="17.961"/>
+	<rect x="153.048" y="275.618" style="fill:#E6F3FF;" width="20.113" height="17.961"/>
+	<rect x="153.048" y="302.563" style="fill:#E6F3FF;" width="20.113" height="17.961"/>
+	<rect x="153.048" y="329.507" style="fill:#E6F3FF;" width="20.113" height="17.961"/>
+</g>
+<g>
+	<rect x="180.82" y="247.863" style="fill:#CFDBE6;" width="20.113" height="17.961"/>
+	<rect x="180.82" y="275.618" style="fill:#CFDBE6;" width="20.113" height="17.961"/>
+	<rect x="180.82" y="302.563" style="fill:#CFDBE6;" width="20.113" height="17.961"/>
+	<rect x="180.82" y="329.507" style="fill:#CFDBE6;" width="20.113" height="17.961"/>
+	<rect x="208.593" y="247.863" style="fill:#CFDBE6;" width="20.113" height="17.961"/>
+	<rect x="208.593" y="275.618" style="fill:#CFDBE6;" width="20.113" height="17.961"/>
+	<rect x="208.593" y="302.563" style="fill:#CFDBE6;" width="20.113" height="17.961"/>
+	<rect x="208.593" y="329.507" style="fill:#CFDBE6;" width="20.113" height="17.961"/>
+	<polygon style="fill:#CFDBE6;" points="349.698,162.304 398.222,162.302 349.698,113.778 	"/>
+</g>
+</svg>
