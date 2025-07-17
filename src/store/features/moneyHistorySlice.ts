@@ -226,19 +226,14 @@ const moneyHisorySlice = createSlice({
 
         builder
             .addCase(createTransaction.pending, (state) => {
-                console.log('Redux: createTransaction.pending')
                 state.loading = true;
                 state.error = null;
             })
             .addCase(createTransaction.fulfilled, (state, action) => {
-                console.log('Redux: createTransaction.fulfilled', action.payload)
-                console.log('Redux: состояние до добавления транзакции:', moneyAdapter.getSelectors().selectTotal(state))
                 state.loading = false;
                 moneyAdapter.addOne(state, action.payload);
-                console.log('Redux: состояние после добавления транзакции:', moneyAdapter.getSelectors().selectTotal(state))
             })
             .addCase(createTransaction.rejected, (state, action) => {
-                console.log('Redux: createTransaction.rejected', action.payload)
                 state.loading = false;
                 state.error = action.payload as string;
             });

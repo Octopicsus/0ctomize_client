@@ -52,8 +52,8 @@ export default function AuthPage() {
         return isValid;
     };
 
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
+    const handleSubmit = async (event: React.FormEvent) => {
+        event.preventDefault();
 
         if (!validateForm()) {
             return;
