@@ -15,7 +15,7 @@ export default function NamePage() {
         }
         return (
             <>
-                <Slash>/</Slash>Dashboard
+                <Slash></Slash>Dashboard
             </>
         )
     }
@@ -40,7 +40,7 @@ const Title = styled.h4`
     margin: 0;
     font-size: 26px;
     text-align: left;
-    color: #333333;
+    color: #535353;
     font-weight: 400;
     font-style: italic;
     letter-spacing: 0.5px;

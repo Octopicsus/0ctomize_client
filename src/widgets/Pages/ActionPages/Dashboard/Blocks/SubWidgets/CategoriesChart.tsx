@@ -108,7 +108,7 @@ const Wrapper = styled.div`
 `
 
 const Spacer = styled.div`
-    height: 70px;
+    height: 50px;
     flex-shrink: 0;
 `
 

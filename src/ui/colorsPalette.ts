@@ -1,5 +1,5 @@
 const colors = {
-    brandColor: "#D4C580",
+    brandColor: "#e8b83fff",
     backgroundMain: "#1с1с1с",
   }
   

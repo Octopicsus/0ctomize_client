@@ -91,7 +91,7 @@ export default function MoneyInputPage() {
         setTimeout(() => {
           dispatch(fetchTransactions()) 
           navigate(LINK_ROUTES.DASHBOARD)
-        }, 300)
+        }, 1500)
 
       } else {
         dispatch(createTransaction({

@@ -21,7 +21,7 @@ export default function ChartLegend({ categories, colors }: Props) {
 const LegendWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 18px;
     justify-content: center;
     padding: 0 8px;
     margin: 0 auto;
@@ -37,15 +37,15 @@ const LegendItem = styled.div`
 `
 
 const ColorDot = styled.div<{ $color: string }>`
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: ${({ $color }) => $color};
     flex-shrink: 0;
 `
 
 const CategoryName = styled.span`
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     color: #676767;
     line-height: 1.1;

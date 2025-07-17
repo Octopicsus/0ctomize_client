@@ -239,7 +239,7 @@ export default function TransactionInput() {
             setTimeout(() => {
                 dispatch(fetchTransactions())
                 navigate(LINK_ROUTES.DASHBOARD)
-            }, 100)
+            }, 355)
         }
     }
 
