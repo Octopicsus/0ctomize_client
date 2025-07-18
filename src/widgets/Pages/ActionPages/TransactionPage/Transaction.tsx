@@ -26,7 +26,7 @@ const TransactionWrapper = styled.div`
         "namePage "
         "transaction";
     grid-template-columns: 600px 1fr;
-    grid-template-rows: 80px auto ;
+    grid-template-rows: 50px auto ;
     gap: 8px;
     padding: 5px;
 `

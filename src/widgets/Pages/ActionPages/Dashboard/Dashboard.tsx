@@ -40,7 +40,7 @@ const Wrapper = styled.div`
         "goals habits wallets wallets cashFlow"
         "payment payment payment payment cashFlow";
     grid-template-columns: 0.8fr 1.2fr 1fr 0.5fr 380px;
-    grid-template-rows: 80px 16% 1fr 1fr 100px;
+    grid-template-rows: 50px 16% 1fr 1fr 100px;
     gap: 8px;
     padding: 5px;
 `
