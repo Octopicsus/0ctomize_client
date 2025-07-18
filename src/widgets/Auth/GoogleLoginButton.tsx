@@ -27,7 +27,7 @@ export default function GoogleLoginButton({ onSuccess, onError }: GoogleLoginBut
                     credential: credentialResponse.credential,
                 }),
             });
-            
+
             if (!response.ok) {
                 const errorText = await response.text();
                 throw new Error(`Google authentication failed: ${response.status} ${errorText}`);
@@ -70,7 +70,11 @@ const GoogleLoginWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  opacity: 0.7;
+  opacity: 0.5;
+
+  & svg {
+  filter: grayscale(1) brightness(0.5);
+  }
   
   & > div {
     width: 100% !important;
