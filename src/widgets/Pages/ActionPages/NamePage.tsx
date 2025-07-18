@@ -9,7 +9,7 @@ export default function NamePage() {
         if (location.pathname === LINK_ROUTES.TRANSACTIONS) {
             return (
                 <>
-                    <Slash>/</Slash>Import
+                    <Slash></Slash>Import
                 </>
             )
         }
