@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h4`
     margin: 0;
-    font-size: 26px;
+    font-size: 30px;
     text-align: left;
     color: #535353;
     font-weight: 400;
