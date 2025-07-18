@@ -38,15 +38,17 @@ const Wrapper = styled.div`
 
 const Title = styled.h4`
     margin: 0;
-    font-size: 30px;
+    font-size: 46px;
     text-align: left;
     color: #535353;
     font-weight: 400;
     font-style: italic;
     letter-spacing: 0.5px;
     padding-left: 0px;
-    font-family: 'Bitter', serif;
+    font-family: 'Chathura';
+    font-weight: 600;
     margin-bottom: 0;
+    text-transform: uppercase;
 `
 
 const Slash = styled.span`

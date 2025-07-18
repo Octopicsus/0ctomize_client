@@ -43,12 +43,13 @@ const InputField = styled.input.withConfig({
 }) <{ hasError: boolean }>`
   padding: 12px 16px;
   border: none;
-  border-bottom: 1px solid ${props => props.hasError ? '#dc3545' : '#2e2e2e'};
+  border-bottom: 1px solid ${props => props.hasError ? '#dc3545' : '#2e2e2ebe'};
   font-size:18px;
   outline: none;
   transition: border-bottom-color 0.3s ease;
   width: 320px;
-  background-color: #191919;
+  background-color: #1919197a;
+  backdrop-filter: blur(5px);
 
   &:focus {
     border-bottom-color: ${props => props.hasError ? '#dc3545' : '#ffb700'};
