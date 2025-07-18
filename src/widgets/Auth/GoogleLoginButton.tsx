@@ -72,6 +72,7 @@ const GoogleLoginWrapper = styled.div`
   width: 100%;
   opacity: 0.5;
 
+
   & svg {
   filter: grayscale(1) brightness(0.5);
   }

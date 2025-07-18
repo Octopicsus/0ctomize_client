@@ -6,7 +6,7 @@ type CategoryState = {
 }
 
 const initialState: CategoryState = {
-    category: CATEGORY.EXPENSE
+    category: CATEGORY.ALL
 }
 
 export const categorySlice = createSlice({

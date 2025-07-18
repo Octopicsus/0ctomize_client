@@ -142,6 +142,10 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    background-image: url('/img/Layout/black-wallpaper-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 `
 
 const NavigationWrapper = styled.div`
