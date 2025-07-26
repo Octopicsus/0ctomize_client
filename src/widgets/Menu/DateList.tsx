@@ -65,6 +65,19 @@ height: 62px;
 width: 100%;
 padding: 0 10px;
 box-sizing: border-box;
+position: relative;
+
+&::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(to right, #1c1c1c 20%, transparent 100%);
+}
 `
 
 const List = styled.ul`
