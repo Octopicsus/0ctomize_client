@@ -4,7 +4,7 @@ import { RootState } from "../../store/store"
 import MoneyActionItem from "./MoneyActionItem"
 import styled from "styled-components"
 import { setSelectedMoneyItemId } from "../../store/features/selectedMoneyActionSlice"
-import { Link } from "react-router"
+import { useNavigate } from "react-router-dom"
 import { LINK_ROUTES } from "../../enums/routes"
 import { formatDate } from "../../utils/formatDate"
 import { useRef, useImperativeHandle, useEffect, useCallback, forwardRef } from "react"
@@ -64,7 +64,9 @@ type Props = {
 const MoneyList = forwardRef<any, Props>(({ onVisibleMonthChange }, ref) => {
   const category = useSelector((state: RootState) => state.category.category)
   const searchPattern = useSelector((state: RootState) => state.search.searchTerm)
+  const sourceFilter = useSelector((state: RootState) => state.sourceFilter?.source || 'all')
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   const selectAll = moneyAdapter.getSelectors(
     (state: RootState) => state.moneyHistory
   ).selectAll
@@ -73,7 +75,13 @@ const MoneyList = forwardRef<any, Props>(({ onVisibleMonthChange }, ref) => {
   const observerRef = useRef<IntersectionObserver | null>(null)
 
   const sortedList = getSortedList(moneyAction, category)
-  const filteredList = searchNames(sortedList, searchPattern)
+
+  const sourceFiltered = sortedList.filter((item) => {
+    if (sourceFilter === 'all') return true
+    return (item.source || 'manual') === sourceFilter
+  })
+
+  const filteredList = searchNames(sourceFiltered, searchPattern)
   const groupedByDate = groupActionsByDate(filteredList)
 
   const handleIntersection = useCallback((entries: IntersectionObserverEntry[]) => {
@@ -178,24 +186,27 @@ const MoneyList = forwardRef<any, Props>(({ onVisibleMonthChange }, ref) => {
             </SubWrapper>
 
             {actions.map((moneyAction: MoneyItem, index) => (
-              <List key={moneyAction.id}>
-                <StyledLink
-                  to={LINK_ROUTES.MONEY_ITEM}
-                  onClick={() => dispatch(setSelectedMoneyItemId(moneyAction.id))}
-                >
+              <List key={moneyAction.id}
+                onClick={() => {
+                  dispatch(setSelectedMoneyItemId(moneyAction.id || 0))
+                  navigate(LINK_ROUTES.TRANSACTIONS, { state: { item: moneyAction } })
+                }}
+              >
+                <ItemClickable>
                   <MoneyActionItem
                     title={moneyAction.title}
-                    desc={moneyAction.description}
                     amount={moneyAction.amount}
                     date={moneyAction.date}
                     time={moneyAction.time}
-                    img={moneyAction.img}
+                    img={'/img/taxes_category.svg'}
                     color={moneyAction.color}
                     type={moneyAction.type}
+                    category={moneyAction.category as any}
+                    categoryConfidence={moneyAction.categoryConfidence as any}
                     isFirst={index === 0}
                     isLast={index === actions.length - 1}
                   />
-                </StyledLink>
+                </ItemClickable>
               </List>
             ))}
           </DateGroup>
@@ -209,9 +220,9 @@ MoneyList.displayName = 'MoneyList'
 
 export default MoneyList
 
-const StyledLink = styled(Link)`
+const ItemClickable = styled.div`
   width: 100%;
-  text-decoration: none;
+  cursor: pointer;
 `
 
 const List = styled.li`

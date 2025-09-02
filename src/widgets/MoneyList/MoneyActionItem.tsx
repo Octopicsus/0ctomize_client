@@ -1,23 +1,26 @@
-import { useNavigate } from "react-router"
+import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 import { LINK_ROUTES } from "../../enums/routes"
 import CategoryIconPlace from "../Placeholders/CategoryIconPlace"
 import { formatAmount } from "../../utils/balanceCalc"
+import { prettifyTitle } from "../../utils/prettifyTitle"
 
 type Props = {
-  title: string,
-  desc?: string,
-  amount: number,
-  date: string,
-  time: string,
-  img: string,
-  color: string,
-  type: string,
-  isFirst?: boolean,
+  title: string
+  amount: number
+  date?: string
+  time: string
+  img: string
+  color: string
+  type: string
+  category?: string
+  categoryConfidence?: number
+  categorySource?: string
+  isFirst?: boolean
   isLast?: boolean
 }
 
-export default function MoneyActionItem({ title, desc, amount, time, img, color, type, isFirst, isLast }: Props) {
+export default function MoneyActionItem({ title, amount, time, img, color, type, category, categoryConfidence, isFirst, isLast }: Props) {
   const navigate = useNavigate()
 
   function handleOpenItem() {
@@ -27,21 +30,26 @@ export default function MoneyActionItem({ title, desc, amount, time, img, color,
   const formattedTime = time.slice(0, 5)
   const sign = type === "Income" ? "+" : "-"
 
+  // Description скрывается в UI по требованию — вычисление не нужно
+
+  const rawTitle = title.split('|')[0].trim()
+  const displayTitle = prettifyTitle(rawTitle)
+
   return (
     <ActionItemButton onClick={handleOpenItem} $isFirst={isFirst} $isLast={isLast}>
       <Wrapper>
-        <CategoryIconPlace img={img} color={color}/>
+        <CategoryIconPlace img={img} color={color} />
         <TitleWrapper>
-          {desc && <Desc>{desc}</Desc>}
-          <Category $hasDesc={!!desc}>{title}</Category>
+          <Category>{displayTitle}</Category>
+          {(category && category !== 'Uncategorized') && (
+            <CategoryLine title={`Category: ${category}${categoryConfidence !== undefined ? ' ('+Math.round(categoryConfidence*100)+'%)' : ''}`}>
+              {category}
+            </CategoryLine>
+          )}
           <Time>{formattedTime}</Time>
         </TitleWrapper>
       </Wrapper>
-      <Amount>{sign} {formatAmount(amount)} 
-        <Sign>
-           Kč
-        </Sign>
-        </Amount>
+  <Amount $income={type === 'Income'}>{sign} {formatAmount(amount)}<Sign $income={type === 'Income'}> Kč</Sign></Amount>
     </ActionItemButton>
   )
 }
@@ -82,22 +90,31 @@ font-size: ${props => props.$hasDesc ? '12px' : '14px'};
 font-weight: ${props => props.$hasDesc ? '300' : '700'};
 color: ${props => props.$hasDesc ? '#7b7b7b' : '#c6c6c6'};
 margin-top: 2px;
+ display: flex;
+ align-items: center;
+ gap: 6px;
 `
 
-const Desc = styled.h4`
-width: 120px;
-font-size: 14px;
-text-align: left;
-color: #c6c6c6;
+// Category line (gray text) replacing colored badge duplication
+const CategoryLine = styled.span`
+  display: block;
+  width: 100%;
+  margin-top: 2px;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  color: #8d8d8d;
 `
 
-const Amount = styled.h4`
+// Description removed from UI
+
+const Amount = styled.h4<{ $income?: boolean }>`
 width: 150px;
 text-align: right;
 font-size: 16px;
 padding-right: 12px;
-color: #afafaf;
-font-weight: 500;
+color: ${p=> p.$income ? '#29c770' : '#afafaf'};
+font-weight: 600;
 `
 
 const TitleWrapper = styled.div`
@@ -114,10 +131,10 @@ margin-top: 6px;
 font-size: 12px;
 `
 
-const Sign = styled.span`
+const Sign = styled.span<{ $income?: boolean }>`
 font-size: 15px;
 margin-left: 4px;
-color: #afafaf;
-font-weight: 400;
+color: ${p=> p.$income ? '#29c770' : '#afafaf'};
+font-weight: 500;
 font-size: 12px;
 `

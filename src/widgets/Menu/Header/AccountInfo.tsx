@@ -2,10 +2,13 @@ import styled from "styled-components"
 import { useSelector } from "react-redux"
 import { RootState } from "../../../store/store"
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom'
+import { LINK_ROUTES } from '../../../enums/routes'
 
 export default function AccountInfo() {
   const { user } = useSelector((state: RootState) => state.auth)
   const [imageError, setImageError] = useState(false)
+  const navigate = useNavigate()
 
   const handleImageError = () => {
     setImageError(true);
@@ -14,7 +17,7 @@ export default function AccountInfo() {
   const hasValidPicture = user?.picture && !imageError;
 
   return (
-    <Wrapper>
+    <Wrapper onClick={()=> navigate(LINK_ROUTES.DASHBOARD)} role="button" tabIndex={0} onKeyDown={e=>{ if(e.key==='Enter'||e.key===' ') { e.preventDefault(); navigate(LINK_ROUTES.DASHBOARD) } }}>
         {hasValidPicture ? (
           <GoogleAvatar 
             src={user.picture} 
@@ -37,6 +40,11 @@ margin-right: 30px;
 display: flex;
 align-items: center;
 gap: 10px;
+cursor: pointer;
+padding: 4px 6px;
+border-radius: 6px;
+transition: background .18s ease;
+&:hover, &:focus { background:#1f1f1f; outline:none; }
 `
 
 const GoogleAvatar = styled.img`

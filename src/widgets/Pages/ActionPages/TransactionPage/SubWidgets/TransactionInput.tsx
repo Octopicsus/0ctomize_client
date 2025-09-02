@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import TransactionHeader from "./TransactionHeader"
-import { useNavigate, useLocation } from "react-router"
+import { useNavigate, useLocation } from "react-router-dom"
 import { LINK_ROUTES } from "../../../../../enums/routes"
 import { useState, useRef, useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
@@ -14,6 +14,7 @@ export default function TransactionInput() {
     const navigate = useNavigate()
     const location = useLocation()
     const editItem = location.state?.item
+    const isBank = !!editItem?.source && editItem.source === 'bank'
     const dispatch = useDispatch<AppDispatch>()
     const hiddenDateInput = useRef<HTMLInputElement>(null)
     const [currencyData, setCurrencyData] = useState<any[]>([])
@@ -22,10 +23,12 @@ export default function TransactionInput() {
     const [selectedTransactionType, setSelectedTransactionType] = useState<'income' | 'expense'>(
         editItem ? (editItem.type === 'Income' ? 'income' : 'expense') : 'expense'
     )
-    const [selectedCategory, setSelectedCategory] = useState<string>(editItem ? editItem.title : '')
+    // For imported bank tx: title = merchant, category stored separately (possibly undefined for manual historic entries)
+    const [selectedCategory, setSelectedCategory] = useState<string>(editItem ? (editItem.category || (editItem.type ? editItem.title : '')) : '')
     const [selectedCategoryColor, setSelectedCategoryColor] = useState<string>(editItem ? editItem.color : '')
     const [transactionValue, setTransactionValue] = useState<string>(editItem ? String(editItem.amount) : '')
-    const [transactionTitle, setTransactionTitle] = useState<string>(editItem ? editItem.description : '')
+    // Display merchant/title for bank, otherwise existing description (user text)
+    const [transactionTitle, setTransactionTitle] = useState<string>(editItem ? (isBank ? editItem.title : editItem.description) : '')
     const [transactionDescription, setTransactionDescription] = useState<string>(editItem ? (editItem.notes || '') : '')
     const [isInputFocused, setIsInputFocused] = useState<boolean>(false)
 
@@ -207,9 +210,10 @@ export default function TransactionInput() {
 
             const transactionData = {
                 type: selectedTransactionType === 'income' ? 'Income' : 'Expense',
-                title: selectedCategory,
-                description: transactionTitle,
-                notes: transactionDescription,
+                // Allow user to edit title (merchant) directly; fallback to previous or selected category
+                title: transactionTitle.trim() || (editItem?.title || selectedCategory),
+                description: transactionDescription, // move notes->description semantic
+                notes: transactionDescription, // keep legacy notes for now
                 amount: numAmount,
                 originalAmount: numAmount,
                 originalCurrency: 'CZK',
@@ -217,6 +221,7 @@ export default function TransactionInput() {
                 time: editItem && editItem.date === dateValue ? editItem.time : formattedTime,
                 img: categoryImg,
                 color: selectedCategoryColor,
+                category: selectedCategory || editItem?.category || undefined,
             }
 
             if (editItem) {

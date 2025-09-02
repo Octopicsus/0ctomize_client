@@ -11,13 +11,7 @@ export default function Wallets() {
 
 const Wrapper = styled.div`
     grid-area: wallets;
-    background-color: #80808018;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    overflow: hidden;
-    gap: 10px;
+    background-color: #191919;
+    border-radius: 8px;
+    padding: 10px;
 `

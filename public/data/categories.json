@@ -46,6 +46,11 @@
       "color": "#abc4aa"
     },
     {
+      "title": "Transfers Get",
+      "img": "/img/taxes_category.svg",
+      "color": "#8fb6e1"
+    },
+    {
       "title": "Other",
       "img": "/img/taxes_category.svg",
       "color": "#d5c774"
@@ -98,6 +103,21 @@
       "color": "#e09aa8"
     },
     {
+      "title": "Transfers Send",
+      "img": "/img/taxes_category.svg",
+      "color": "#e0a05f"
+    },
+    {
+      "title": "Shisha Cafe",
+      "img": "/img/taxes_category.svg",
+      "color": "#d37fa6"
+    },
+    {
+      "title": "Cinema",
+      "img": "/img/taxes_category.svg",
+      "color": "#9d99e3"
+    },
+    {
       "title": "Health",
       "img": "/img/taxes_category.svg",
       "color": "#d47b90"
@@ -111,6 +131,11 @@
       "title": "Cafe",
       "img": "/img/taxes_category.svg",
       "color": "#d89176"
+    },
+    {
+      "title": "Bar",
+      "img": "/img/taxes_category.svg",
+      "color": "#c07f5d"
     },
     {
       "title": "Fun",
@@ -136,6 +161,11 @@
       "title": "Transport",
       "img": "/img/taxes_category.svg",
       "color": "#7fb2c3"
+    },
+    {
+      "title": "Electronics",
+      "img": "/img/taxes_category.svg",
+      "color": "#6f8fb9"
     },
     {
       "title": "Renovation",

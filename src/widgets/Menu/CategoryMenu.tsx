@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { setCategory } from "../../store/features/categorySlice"
 import { useDispatch, useSelector } from "react-redux"
 import { RootState } from "../../store/store"
-import { useNavigate } from "react-router"
+import { useNavigate } from "react-router-dom"
 import { LINK_ROUTES } from "../../enums/routes"
 
 export default function Header() {

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { useLocation } from "react-router"
+import { useLocation } from "react-router-dom"
 import { LINK_ROUTES } from "../../../enums/routes"
 
 export default function NamePage() {

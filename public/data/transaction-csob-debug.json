@@ -1,0 +1,550 @@
+{
+  "transactions": {
+    "booked": [
+      {
+        "entryReference": "3456",
+        "bookingDate": "2025-08-22",
+        "transactionAmount": {
+          "amount": "-1531.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 1531 CZK 20.08.2025Místo: www.cd.cz/eshop/Praha 1 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000233"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "510e5a6bdfce95a2f60efe791f4bbcbc"
+      },
+      {
+        "entryReference": "3464",
+        "bookingDate": "2025-08-22",
+        "transactionAmount": {
+          "amount": "-21.90",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 21,9 CZK 20.08.2025Místo: ROSSMANN VAM DEKUJEPRAHA 4 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000233"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "12966aff550f4a9b77e7da6af6c19409"
+      },
+      {
+        "entryReference": "3462",
+        "bookingDate": "2025-08-22",
+        "transactionAmount": {
+          "amount": "-619.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 619 CZK 20.08.2025Místo: Restaurace The BorscHlavni mesto ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000233"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "9d0d87b76ebad95fad4c40941412488a"
+      },
+      {
+        "entryReference": "3460",
+        "bookingDate": "2025-08-22",
+        "transactionAmount": {
+          "amount": "-422.20",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 422,2 CZK 20.08.2025Místo: Lidl dekuje za nakupPraha 10 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000233"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "68edb5b802a266bed99d5dee38c91cdc"
+      },
+      {
+        "entryReference": "3458",
+        "bookingDate": "2025-08-22",
+        "transactionAmount": {
+          "amount": "-1406.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 1406 CZK 20.08.2025Místo: CD Praha hl.n.Praha 2 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000233"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "90d52c9624e66247410ff18b3c638f0b"
+      },
+      {
+        "entryReference": "3452",
+        "bookingDate": "2025-08-21",
+        "transactionAmount": {
+          "amount": "-450.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 450 CZK 19.08.2025Místo: MUJKAKTUS.CZPRAHA 4 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000232"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "94ceea331fc91e8498d764afda4c310a"
+      },
+      {
+        "entryReference": "3454",
+        "bookingDate": "2025-08-21",
+        "transactionAmount": {
+          "amount": "-299.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 299 CZK 20.08.2025Místo: Zrno Zrnko TylakPraha ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000232"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "60e4c6282556c8f5fd9b9fc1b0a1e74a"
+      },
+      {
+        "entryReference": "3444",
+        "bookingDate": "2025-08-20",
+        "transactionAmount": {
+          "amount": "-2846.22",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 2846,22 CZK 18.08.2025Místo: TransferGoVilnius ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000231"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "14aa4f0315567d6f78d3b331d9e775ad"
+      },
+      {
+        "entryReference": "3448",
+        "bookingDate": "2025-08-20",
+        "transactionAmount": {
+          "amount": "-353.20",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 353,2 CZK 18.08.2025Místo: Billa Belehradska 50Praha - Beleh ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000231"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "d935252660821f439b7aee6d2f41d954"
+      },
+      {
+        "entryReference": "3446",
+        "bookingDate": "2025-08-20",
+        "transactionAmount": {
+          "amount": "-645.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 645 CZK 18.08.2025Místo: POLEVKARNAPraha 2 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000231"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "c0ef20c74bb3bdce6faf586f32df0c35"
+      },
+      {
+        "entryReference": "3432",
+        "bookingDate": "2025-08-18",
+        "transactionAmount": {
+          "amount": "18718.00",
+          "currency": "CZK"
+        },
+        "debtorName": "KOVER assistance s.r",
+        "debtorAccount": {
+          "iban": "CZ5808000000005488201369"
+        },
+        "remittanceInformationUnstructured": "Mzda-7/25",
+        "remittanceInformationUnstructuredArray": [
+          "KS:0",
+          "VS:72025"
+        ],
+        "proprietaryBankTransactionCode": "10000109000",
+        "internalTransactionId": "d9bd4085f24143a86ec989d0cdb5b590"
+      },
+      {
+        "entryReference": "3430",
+        "bookingDate": "2025-08-15",
+        "transactionAmount": {
+          "amount": "-2846.32",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 2846,32 CZK 13.08.2025Místo: TransferGoVilnius ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000226"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "4a8cf7d45b57e689d679d952d14a8908"
+      },
+      {
+        "entryReference": "3425",
+        "bookingDate": "2025-08-11",
+        "transactionAmount": {
+          "amount": "-119.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 119 CZK 08.08.2025Místo: UGO Salaterie 5091Praha 1 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000221"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "637b54d65525c17ce06d53389b729dc1"
+      },
+      {
+        "entryReference": "3427",
+        "bookingDate": "2025-08-11",
+        "transactionAmount": {
+          "amount": "-169.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 169 CZK 10.08.2025Místo: Spotify P39665F087Stockholm ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000222"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "8e8f8fb77158916faa302cfa35f148a0"
+      },
+      {
+        "entryReference": "3421",
+        "bookingDate": "2025-08-06",
+        "transactionAmount": {
+          "amount": "-300.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 300 CZK 04.08.2025Místo: MUJKAKTUS.CZPRAHA 4 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000217"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "f0e737419b6540e4b7f1d3a37eba1308"
+      },
+      {
+        "entryReference": "3417",
+        "bookingDate": "2025-08-04",
+        "transactionAmount": {
+          "amount": "1500.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "MoneySend doúčtování: 03.08.2025Andrii Zhyvov1500 CZK",
+        "remittanceInformationUnstructuredArray": [
+          "SS:556414"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "aae61ed22136e1a342a78e7f2163b1d9"
+      },
+      {
+        "entryReference": "3419",
+        "bookingDate": "2025-08-04",
+        "transactionAmount": {
+          "amount": "-1050.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 1050 CZK 01.08.2025Místo: Souvlaki BarPraha 1 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000214"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "b6adeaf89d7f18b1064fe7950ec21025"
+      },
+      {
+        "entryReference": "3414",
+        "bookingDate": "2025-07-31",
+        "transactionAmount": {
+          "amount": "-398.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 398 CZK 29.07.2025Místo: PHO U PANI HOAPRAHA ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000211"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "d78986b108724879755e6bf610ac3008"
+      },
+      {
+        "entryReference": "3412",
+        "bookingDate": "2025-07-30",
+        "transactionAmount": {
+          "amount": "-294.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 294 CZK 28.07.2025Místo: UGO Salaterie 5091Praha 1 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000210"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "48dfd91d0293cf1d2736b1b55f086c44"
+      },
+      {
+        "entryReference": "3392",
+        "bookingDate": "2025-07-28",
+        "transactionAmount": {
+          "amount": "-1011.04",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 40 EUR 23.07.2025Místo: TAPA E-TICKETATHINA ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000206"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "a0bdd14200818c6a2878dcaac0721870"
+      },
+      {
+        "entryReference": "3408",
+        "bookingDate": "2025-07-28",
+        "transactionAmount": {
+          "amount": "-1142.15",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 1142,15 CZK 26.07.2025Místo: TransferGoVilnius ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000208"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "331217a1a78df8b8a46861f0ecddc597"
+      },
+      {
+        "entryReference": "3406",
+        "bookingDate": "2025-07-28",
+        "transactionAmount": {
+          "amount": "-300.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 300 CZK 25.07.2025Místo: TISSE NUSELSKAPRAHA ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000207"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "40e1c7578c152ea95449d0c4c76f869d"
+      },
+      {
+        "entryReference": "3404",
+        "bookingDate": "2025-07-28",
+        "transactionAmount": {
+          "amount": "-899.02",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 899,02 CZK 25.07.2025Místo: Tesco Praha NarodniPraha 1 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000207"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "b39a003ba915d81ddf50b031f2fa772a"
+      },
+      {
+        "entryReference": "3402",
+        "bookingDate": "2025-07-28",
+        "transactionAmount": {
+          "amount": "-370.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 370 CZK 25.07.2025Místo: POLEVKARNAPraha 2 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000207"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "ed7bfde632d3bebd49d329ccf6c2a7bd"
+      },
+      {
+        "entryReference": "3400",
+        "bookingDate": "2025-07-28",
+        "transactionAmount": {
+          "amount": "-140.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 140 CZK 25.07.2025Místo: Puro GelatoPraha 2 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000207"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "60a44a9372fa7a5edc8b8ce8ba5940f9"
+      },
+      {
+        "entryReference": "3398",
+        "bookingDate": "2025-07-28",
+        "transactionAmount": {
+          "amount": "-2000.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 2000 CZK 25.07.2025Místo: Las Adelitas AmerickaPraha ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000207"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "39a36bcf1709bc9f921bc69823dafafc"
+      },
+      {
+        "entryReference": "3396",
+        "bookingDate": "2025-07-28",
+        "transactionAmount": {
+          "amount": "-80.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 80 CZK 25.07.2025Místo: KAVARNA CESTOV. OBCHOPRAHA ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000207"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "8811b3f0d5483ef50c7a623ccc909abc"
+      },
+      {
+        "entryReference": "3394",
+        "bookingDate": "2025-07-28",
+        "transactionAmount": {
+          "amount": "-473.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 473 CZK 24.07.2025Místo: TISSE NUSELSKAPRAHA ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000206"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "ff3b586a8a47f1695886e3b6811d6484"
+      },
+      {
+        "entryReference": "3375",
+        "bookingDate": "2025-07-25",
+        "transactionAmount": {
+          "amount": "-40.00",
+          "currency": "CZK"
+        },
+        "creditorAccount": {
+          "iban": "CZ0501000001150434330277"
+        },
+        "proprietaryBankTransactionCode": "10000108000",
+        "internalTransactionId": "9e6ab0c26b5fe85f7d648f3c5eabb34d"
+      },
+      {
+        "entryReference": "3383",
+        "bookingDate": "2025-07-25",
+        "transactionAmount": {
+          "amount": "-75.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 75 CZK 22.07.2025Místo: CINEMA CITY SLOVANSKPRAHA 1 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000205"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "6fdc42419cc6ae8f8f08a5145942a949"
+      },
+      {
+        "entryReference": "3381",
+        "bookingDate": "2025-07-25",
+        "transactionAmount": {
+          "amount": "-165.70",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 165,7 CZK 23.07.2025Místo: Tesco Praha Novy SmichPraha 5 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000205"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "ade6f4715735927a92cc0543352df175"
+      },
+      {
+        "entryReference": "3379",
+        "bookingDate": "2025-07-25",
+        "transactionAmount": {
+          "amount": "-205.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 205 CZK 23.07.2025Místo: UGO Salaterie 5208Praha ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000205"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "99b2ad05797a26760083052919c725c3"
+      },
+      {
+        "entryReference": "3369",
+        "bookingDate": "2025-07-24",
+        "transactionAmount": {
+          "amount": "-58.90",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 58,9 CZK 22.07.2025Místo: Lidl dekuje za nakupPraha 1 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000205"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "bf1153aea657850bb47e5cbca8797fe1"
+      },
+      {
+        "entryReference": "3371",
+        "bookingDate": "2025-07-24",
+        "transactionAmount": {
+          "amount": "-217.00",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructured": "Částka: 217 CZK 22.07.2025Místo: POLEVKARNAPraha 2 ",
+        "remittanceInformationUnstructuredArray": [
+          "KS:1178",
+          "SS:2111556414",
+          "VS:205000205"
+        ],
+        "proprietaryBankTransactionCode": "30000301000",
+        "internalTransactionId": "deca641ae0700b442f4d535f4ccdb171"
+      }
+    ],
+    "pending": []
+  },
+  "last_updated": "2025-08-22T17:48:22.623941Z"
+}

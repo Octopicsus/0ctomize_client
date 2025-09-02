@@ -1,4 +1,5 @@
-const API_BASE_URL = 'http://localhost:3001/api';
+const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3001'
+const API_BASE_URL = `${API_URL.replace(/\/+$/, '')}/api`;
 
 export const API_ENDPOINTS = {
   CATEGORIES: '/data/categories.json',
@@ -113,6 +114,7 @@ export interface Transaction {
   title: string;
   description: string;
   notes?: string;
+  bankAccountId?: string;
   amount: number;
   originalAmount: number;
   originalCurrency: string;
@@ -122,6 +124,10 @@ export interface Transaction {
   color: string;
   createdAt?: string;
   updatedAt?: string;
+  category?: string;
+  categoryConfidence?: number;
+  categorySource?: 'auto' | 'manual' | 'rule' | 'llm' | 'override';
+  categoryReason?: string;
 }
 
 export const transactionsAPI = {

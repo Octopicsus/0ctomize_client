@@ -6,5 +6,6 @@ export enum LINK_ROUTES {
     MONEY_INPUT = '/moneyinputpage',
     MONEY_ITEM = '/moneyitempage',
     CUSTOM_CATEGORY = '/customcategory',
-    TRANSACTIONS = '/transactions'
+    TRANSACTIONS = '/transactions',
+    BANK = '/bank'
   }

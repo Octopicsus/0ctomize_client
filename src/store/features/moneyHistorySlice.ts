@@ -4,7 +4,8 @@ import { RootState } from "../store";
 import { sessionStorageUtils } from "../../utils/sessionStorage";
 
 export type MoneyItem = {
-    id: number
+    // numeric id убран из ключа сущности; можно оставить как кэш для старых ссылок, но необязателен
+    id?: number
     _id?: string
     userId?: string
     userEmail?: string
@@ -12,6 +13,7 @@ export type MoneyItem = {
     title: string
     description: string
     notes?: string
+    bankAccountId?: string
     amount: number
     originalAmount: number
     originalCurrency: string
@@ -19,51 +21,60 @@ export type MoneyItem = {
     time: string
     img: string
     color: string
+    // mark origin when imported from bank
+    source?: 'bank' | 'manual'
     createdAt?: string
     updatedAt?: string
+    category?: string
+    categoryConfidence?: number
+    categorySource?: 'auto' | 'manual' | 'rule' | 'llm' | 'override'
+    categoryReason?: string
 }
 
 
 export const fetchTransactions = createAsyncThunk(
     'moneyHistory/fetchTransactions',
-    async (_, { getState, rejectWithValue }) => {
+    async (_, { getState, rejectWithValue, dispatch }) => {
         try {
-            const cachedData = sessionStorageUtils.getData()
+            const cachedData = sessionStorageUtils.getData();
             if (cachedData && cachedData.transactions.length > 0) {
+                // 1) Немедленно отдаем кешированные данные для быстрой отрисовки
+                        const immediate = cachedData.transactions.map((transaction: Transaction) => ({
+                            ...transaction,
+                            _id: transaction._id,
+                        }));
+
+                // 2) Фоном получаем актуальные данные и гидратируем стор (раньше этого не было — поэтому оставались только первые N записей)
                 setTimeout(async () => {
                     try {
                         const state = getState() as RootState;
                         const token = state.auth.accessToken;
                         if (token) {
                             const response = await transactionsAPI.getTransactions(token);
-                            sessionStorageUtils.updateTransactions(response.transactions)
+                            sessionStorageUtils.updateTransactions(response.transactions);
+                                            const freshMapped = response.transactions.map((t: Transaction) => ({
+                                                ...t,
+                                                _id: t._id,
+                                            }));
+                            dispatch(hydrateTransactions(freshMapped));
                         }
-                    } catch (error) {
-                    }
-                }, 0)
-                
-                return cachedData.transactions.map((transaction: Transaction) => ({
-                    ...transaction,
-                    id: parseInt(transaction._id || '0', 16) % 1000000,
-                    _id: transaction._id, 
-                }));
+                    } catch {}
+                }, 0);
+
+                return immediate;
             }
 
+            // Нет кеша — обычный полный запрос
             const state = getState() as RootState;
             const token = state.auth.accessToken;
-            
-            if (!token) {
-                throw new Error('No authentication token');
-            }
+            if (!token) throw new Error('No authentication token');
 
             const response = await transactionsAPI.getTransactions(token);
-            const mappedTransactions = response.transactions.map((transaction: Transaction) => ({
-                ...transaction,
-                id: parseInt(transaction._id || '0', 16) % 1000000, 
-                _id: transaction._id, 
-            }));
-            
-            sessionStorageUtils.updateTransactions(response.transactions)
+                    const mappedTransactions = response.transactions.map((transaction: Transaction) => ({
+                        ...transaction,
+                        _id: transaction._id,
+                    }));
+            sessionStorageUtils.updateTransactions(response.transactions);
             return mappedTransactions;
         } catch (error: any) {
             return rejectWithValue(error.message);
@@ -85,7 +96,6 @@ export const forceRefreshTransactions = createAsyncThunk(
             const response = await transactionsAPI.getTransactions(token);
             const mappedTransactions = response.transactions.map((transaction: Transaction) => ({
                 ...transaction,
-                id: parseInt(transaction._id || '0', 16) % 1000000,
                 _id: transaction._id,
             }));
             
@@ -179,16 +189,19 @@ export const deleteTransaction = createAsyncThunk(
 const loadInitialTransactions = (): MoneyItem[] => {
   const cachedData = sessionStorageUtils.getData()
   if (cachedData && cachedData.transactions.length > 0) {
-    return cachedData.transactions.map((transaction: Transaction) => ({
-      ...transaction,
-      id: parseInt(transaction._id || '0', 16) % 1000000,
-      _id: transaction._id, 
-    }));
+        return cachedData.transactions.map((transaction: Transaction) => ({
+            ...transaction,
+            _id: transaction._id, 
+        }));
   }
   return []
 }
 
-export const moneyAdapter = createEntityAdapter<MoneyItem>()
+// ВАЖНО: раньше использовался numeric id (mod 1_000_000) => вызывало коллизии и сжатие списка (часть транзакций терялась)
+// Теперь первичный ключ сущности = Mongo _id (гарантированно уникален). Числовой id остаётся только вспомогательным.
+export const moneyAdapter = createEntityAdapter<MoneyItem, string | number>({
+    selectId: (m: MoneyItem) => m._id || (m.id as number | string)
+})
 const initialState = moneyAdapter.getInitialState({
     loading: false,
     error: null as string | null,
@@ -206,6 +219,10 @@ const moneyHisorySlice = createSlice({
             moneyAdapter.removeAll(state);
             state.error = null;
             sessionStorageUtils.updateTransactions([]);
+        },
+        hydrateTransactions: (state, action) => {
+            // Полная замена на актуальные данные из бэкграунд-фетча
+            moneyAdapter.setAll(state, action.payload);
         }
     },
 
@@ -292,5 +309,5 @@ const moneyHisorySlice = createSlice({
     }
 })
 
-export const { clearError, clearTransactions } = moneyHisorySlice.actions
+export const { clearError, clearTransactions, hydrateTransactions } = moneyHisorySlice.actions
 export default moneyHisorySlice.reducer

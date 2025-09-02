@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { authAPI, RegisterData, LoginData } from '../../api/api';
+import { bankdataAPI } from '../../api/bankdata';
 import { sessionStorageUtils } from '../../utils/sessionStorage';
 
 interface User {
@@ -174,6 +175,10 @@ const authSlice = createSlice({
         state.refreshToken = action.payload.refreshToken;
         state.isAuthenticated = true;
         state.error = null;
+        // Fire and forget auto sync (ignoring result). Execution outside reducer scope via microtask.
+        queueMicrotask(() => {
+          try { bankdataAPI.autoSync().catch(()=>{}); } catch {}
+        });
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.isLoading = false;

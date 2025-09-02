@@ -10,6 +10,7 @@ import { useRef, useState } from "react"
 import SearchTitle from "../../Filter/SearchTitle"
 import SubTitle from "../../Layout/SubTitle"
 import HeaderBlock from "../../Menu/Header/HeaderBlock"
+import SourceFilter from "../../Filter/SourceFilter"
 
 export default function AllTransactionsPage() {
     const selectAll = moneyAdapter.getSelectors(
@@ -40,6 +41,7 @@ export default function AllTransactionsPage() {
                 </InfoGraph>
                 <List>
                     <SearchTitle />
+                    <SourceFilter />
                     <SubTitle title="All Transactions" sizeTitle="20px" margin="14px" />
                     <DateList
                         onMonthSelect={handleMonthSelect}

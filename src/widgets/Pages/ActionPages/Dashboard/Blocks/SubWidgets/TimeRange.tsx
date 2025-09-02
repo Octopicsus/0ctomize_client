@@ -1,30 +1,16 @@
 import styled from "styled-components"
-import { useState } from "react"
 
-const timeRanges = [
-    "Day",
-    "Week", 
-    "Month",
-    "6 Month",
-    "Year",
-    "5 Years",
-    "Full"
-]
+export type TimeRangeValue = 'Day'|'Week'|'Month'|'6 Month'|'Year'|'5 Years'|'Full'
 
-export default function TimeRange() {
-    const [activeRange, setActiveRange] = useState("1 Month")
-
-    const handleRangeClick = (range: string) => {
-        setActiveRange(range)
-    }
-
+export default function TimeRange({ value, onChange, ranges }: { value: TimeRangeValue; onChange: (r:TimeRangeValue)=>void; ranges: TimeRangeValue[] }) {
+    const activeRange = value
     return (
         <Wrapper>
-            {timeRanges.map((range, index) => (
+            {ranges.map((range) => (
                 <RangeItem 
-                    key={index}
+                    key={range}
                     $active={range === activeRange}
-                    onClick={() => handleRangeClick(range)}
+                    onClick={() => onChange(range)}
                 >
                     {range}
                 </RangeItem>

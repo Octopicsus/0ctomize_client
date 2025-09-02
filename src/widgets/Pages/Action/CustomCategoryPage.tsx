@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import CategoryIconsList from "../../CategoryMoneyList/CategoryIconsList"
 import CategoryCustomDemo from "../../CategoryMoneyList/CategoryCustomDemo"
-import { useNavigate } from "react-router"
+import { useNavigate } from "react-router-dom"
 import { LINK_ROUTES } from "../../../enums/routes"
 import CategoryCustomList from "../../CategoryMoneyList/CategoryCustomList"
 import { useSelector } from "react-redux"

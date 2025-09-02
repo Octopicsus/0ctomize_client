@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router"
+import { useNavigate } from "react-router-dom"
 import InputButton from "../../Buttons/InputButton"
 import SubBalance from "../../Balance/SubBalance"
 import { moneyAdapter } from "../../../store/features/moneyHistorySlice"

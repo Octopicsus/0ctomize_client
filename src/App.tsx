@@ -1,5 +1,5 @@
-import { Route, Routes, useNavigate, useLocation } from 'react-router'
-import { useEffect } from 'react'
+import { Route, Routes, useNavigate, useLocation } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { LINK_ROUTES } from './enums/routes'
 import styled from 'styled-components'
@@ -16,11 +16,13 @@ import ProtectedRoute from './widgets/Auth/ProtectedRoute'
 import HeaderBlock from './widgets/Menu/Header/HeaderBlock'
 import { RootState, AppDispatch } from './store/store'
 import { verifyToken } from './store/features/authSlice'
-import { fetchTransactions } from './store/features/moneyHistorySlice'
+import { fetchTransactions, forceRefreshTransactions } from './store/features/moneyHistorySlice'
 import { fetchUserCategories } from './store/features/customCategorySlice'
 import Sidebar from './widgets/Menu/Sidebar/Sidebar'
 import Dashboard from './widgets/Pages/ActionPages/Dashboard/Dashboard'
 import Transaction from './widgets/Pages/ActionPages/TransactionPage/Transaction'
+import BankPage from './widgets/Pages/ActionPages/Bank/BankPage'
+import SyncStatusModal from './widgets/BankSync/SyncStatusModal'
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
   const location = useLocation()
   const dispatch = useDispatch<AppDispatch>()
   const { isAuthenticated, accessToken, isLoading, user } = useSelector((state: RootState) => state.auth)
+  const [showSyncModal, setShowSyncModal] = useState(false)
 
   useEffect(() => {
     console.log('App - состояние аутентификации:')
@@ -46,9 +49,12 @@ function App() {
 
   useEffect(() => {
     if (isAuthenticated && accessToken) {
-      dispatch(fetchTransactions())
+      // Сначала быстрая загрузка (кеш/фон), затем обязательное принудительное обновление
+      dispatch(fetchTransactions()).finally(() => {
+        dispatch(forceRefreshTransactions())
+      })
       dispatch(fetchUserCategories())
-      
+
       if (location.pathname === '/' || location.pathname === '/login') {
         navigate(LINK_ROUTES.DASHBOARD)
       }
@@ -67,7 +73,8 @@ function App() {
     location.pathname === LINK_ROUTES.CUSTOM_CATEGORY ||
     location.pathname === LINK_ROUTES.DASHBOARD ||
     location.pathname === LINK_ROUTES.TRANSACTIONS ||
-    location.pathname === '/users'
+    location.pathname === '/users' ||
+    location.pathname === LINK_ROUTES.BANK
 
   if (isLoading) {
     return (
@@ -86,6 +93,9 @@ function App() {
       ) : (
         <AppContainer>
           <HeaderBlock />
+          <SyncButtonWrapper>
+            <SyncBtn onClick={() => setShowSyncModal(true)}>Bank Sync</SyncBtn>
+          </SyncButtonWrapper>
           <Sidebar />
           {!isActionPage && (
             <>
@@ -139,9 +149,15 @@ function App() {
                 <Transaction />
               </ProtectedRoute>
             } />
+            <Route path={LINK_ROUTES.BANK} element={
+              <ProtectedRoute>
+                <BankPage />
+              </ProtectedRoute>
+            } />
           </Routes>
         </AppContainer>
       )}
+  {showSyncModal && <SyncStatusModal onClose={() => setShowSyncModal(false)} />}
     </div>
   )
 }
@@ -153,6 +169,25 @@ const AppContainer = styled.div`
   text-align: center;
   padding-top: 60px; 
   padding-left: 60px; 
+`
+
+const SyncButtonWrapper = styled.div`
+  position: fixed;
+  top: 10px;
+  right: 14px;
+  z-index: 1500;
+`
+
+const SyncBtn = styled.button`
+  background: #252525;
+  color: #ddd;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  &:hover { background: #303030; }
 `
 
 export default App

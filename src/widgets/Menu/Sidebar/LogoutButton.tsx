@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { useDispatch } from "react-redux"
-import { useNavigate } from "react-router"
+import { useNavigate } from "react-router-dom"
 import { AppDispatch } from "../../../store/store"
 import { logoutUser } from "../../../store/features/authSlice"
 import colors from "../../../ui/colorsPalette"

@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { useEffect } from 'react'
+import { bankdataAPI } from '../../../../api/bankdata'
 import NamePage from "../NamePage"
 import Balance from "./Blocks/Balance"
 import Activities from "./Blocks/Activities"
@@ -10,6 +12,16 @@ import Payment from "./Blocks/Payment"
 import CashFlow from "./Blocks/CashFlow"
 
 export default function Dashboard() {
+    useEffect(() => {
+        const LS_KEY = 'bank_auto_sync_last'
+        const now = Date.now()
+        const last = Number(localStorage.getItem(LS_KEY) || '0')
+        // Avoid spamming: only attempt if > 5 min since last check
+        if (now - last > 5 * 60 * 1000) {
+            localStorage.setItem(LS_KEY, String(now))
+            bankdataAPI.autoSync().catch(() => {})
+        }
+    }, [])
     return (
         <Wrapper>
             <NamePage />

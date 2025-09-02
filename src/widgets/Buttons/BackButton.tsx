@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 import { RootState } from '../../store/store'
 import styled from 'styled-components'
 import getCategoryPath from '../../utils/categoryPath'

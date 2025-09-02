@@ -12,13 +12,15 @@ interface GoogleLoginButtonProps {
 export default function GoogleLoginButton({ onSuccess, onError }: GoogleLoginButtonProps) {
     const dispatch = useDispatch<AppDispatch>();
 
+    const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3001'
+
     const handleGoogleSuccess = async (credentialResponse: any) => {
         try {
             if (!credentialResponse.credential) {
                 throw new Error('No credential received from Google');
             }
 
-            const response = await fetch('http://localhost:3001/api/auth/google', {
+            const response = await fetch(`${API_URL.replace(/\/+$/, '')}/api/auth/google`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -6,6 +6,7 @@ import customCategoryReducer from "./features/customCategorySlice"
 import searchReducer from "./features/searchSlice"
 import currencyReducer from "./features/currencySlice"
 import authReducer from "./features/authSlice"
+import sourceFilterReducer from "./features/sourceFilterSlice"
 
 function getInitialState() {
   const category = localStorage.getItem("category")
@@ -33,6 +34,7 @@ export const store = configureStore({
     search: searchReducer,
     currency: currencyReducer,
     auth: authReducer,
+    sourceFilter: sourceFilterReducer,
   },
   preloadedState: getInitialState()
 })

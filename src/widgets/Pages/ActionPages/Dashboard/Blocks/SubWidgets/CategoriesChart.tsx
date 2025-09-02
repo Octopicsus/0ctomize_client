@@ -7,6 +7,7 @@ import ChartLegend from "./ChartLegend"
 import { useEffect, useState } from "react"
 import { API_ENDPOINTS } from "../../../../../../api/api"
 import { CATEGORY } from "../../../../../../enums/categoryTitles"
+import { DashboardTimeRange } from '../Categories'
 
 type CategoryType = {
     title: string
@@ -14,7 +15,7 @@ type CategoryType = {
     color: string
 }
 
-export default function CategoriesChart() {
+export default function CategoriesChart({ range }: { range: DashboardTimeRange }) {
     const selectAll = moneyAdapter.getSelectors(
         (state: RootState) => state.moneyHistory
     ).selectAll
@@ -47,14 +48,36 @@ export default function CategoriesChart() {
         ? transactions 
         : transactions.filter(transaction => transaction.type === selectedCategory)
     
-    const categoryData = filteredTransactions.reduce((acc: Record<string, number>, transaction) => {
-        const category = transaction.title || 'Other'
-        acc[category] = (acc[category] || 0) + transaction.amount
+    const now = new Date()
+    const fromDate = (() => {
+        switch(range){
+            case 'Day': return new Date(now.getFullYear(), now.getMonth(), now.getDate()-1)
+            case 'Week': return new Date(now.getFullYear(), now.getMonth(), now.getDate()-7)
+            case 'Month': return new Date(now.getFullYear(), now.getMonth(), now.getDate()-30)
+            case '6 Month': return new Date(now.getFullYear(), now.getMonth()-6, now.getDate())
+            case 'Year': return new Date(now.getFullYear()-1, now.getMonth(), now.getDate())
+            case '5 Years': return new Date(now.getFullYear()-5, now.getMonth(), now.getDate())
+            case 'Full': default: return new Date(0)
+        }
+    })()
+
+    const rangeFiltered = filteredTransactions.filter(tx => {
+        const d = new Date(`${tx.date}T${tx.time}`)
+        return d >= fromDate && d <= now
+    })
+
+    // Aggregate by category (not raw title). Fallback to 'Other' if empty/Uncategorized.
+    const rawCategoryTotals = rangeFiltered.reduce((acc: Record<string, number>, tx) => {
+        const cat = (tx.category && tx.category !== 'Uncategorized') ? tx.category : 'Other'
+        const value = Math.abs(tx.amount) // treat both expense/income as positive weight for distribution
+        acc[cat] = (acc[cat] || 0) + value
         return acc
     }, {})
 
-    const categoryNames = Object.keys(categoryData)
-    const amounts = Object.values(categoryData)
+    // Sort categories by total desc for stable legend
+    const sortedEntries = Object.entries(rawCategoryTotals).sort((a,b) => b[1]-a[1])
+    const categoryNames = sortedEntries.map(e => e[0])
+    const amounts = sortedEntries.map(e => e[1])
 
     const getCategoryColor = (categoryTitle: string) => {
         const category = categories.find(cat => cat.title === categoryTitle)

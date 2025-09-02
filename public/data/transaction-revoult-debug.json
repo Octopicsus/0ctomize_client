@@ -1,0 +1,3903 @@
+{
+  "transactions": {
+    "booked": [
+      {
+        "transactionId": "68a2d8c1-d148-a239-9c7c-4906fd7063b2",
+        "bookingDate": "2025-08-18",
+        "valueDate": "2025-08-19",
+        "bookingDateTime": "2025-08-18T07:39:45.904217Z",
+        "valueDateTime": "2025-08-19T04:48:11.815428Z",
+        "transactionAmount": {
+          "amount": "-15.50",
+          "currency": "CZK"
+        },
+        "creditorName": "Zabka - Francouzska",
+        "remittanceInformationUnstructuredArray": [
+          "Zabka - Francouzska"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "149.89",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "bb84787c1eb7cb4ee88e8f0076a7be85"
+      },
+      {
+        "transactionId": "68a2df33-024e-af8a-b109-c190e3b04de9",
+        "bookingDate": "2025-08-18",
+        "valueDate": "2025-08-18",
+        "bookingDateTime": "2025-08-18T08:07:15.000291Z",
+        "valueDateTime": "2025-08-18T14:57:37.432313Z",
+        "transactionAmount": {
+          "amount": "-400.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Kavarna Zanzibar",
+        "remittanceInformationUnstructuredArray": [
+          "Kavarna Zanzibar"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "165.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "18afeb0b5e183d10c5d110d0e1563685"
+      },
+      {
+        "transactionId": "68a1af3a-30f5-a59c-8e29-144c7b7bfeb4",
+        "bookingDate": "2025-08-17",
+        "valueDate": "2025-08-18",
+        "bookingDateTime": "2025-08-17T10:30:18.489766Z",
+        "valueDateTime": "2025-08-18T04:43:34.536646Z",
+        "transactionAmount": {
+          "amount": "-27.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Relay Quadrio 31054",
+        "remittanceInformationUnstructuredArray": [
+          "Relay Quadrio 31054"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "723.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "892bf17e8ac013722b58e06b774a626e"
+      },
+      {
+        "transactionId": "68a1ac02-b931-ab9e-bd18-e4a377a6268f",
+        "bookingDate": "2025-08-17",
+        "valueDate": "2025-08-18",
+        "bookingDateTime": "2025-08-17T10:16:34.152427Z",
+        "valueDateTime": "2025-08-18T04:43:37.182952Z",
+        "transactionAmount": {
+          "amount": "-158.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Paul-quadrio - Kiosk 6",
+        "remittanceInformationUnstructuredArray": [
+          "Paul-Quadrio - Kiosk 6"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "565.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "c7db227d7f8a520aa47318d926331a2e"
+      },
+      {
+        "transactionId": "68a1a456-a1cd-a8f1-b395-4c9e42c7a478",
+        "bookingDate": "2025-08-17",
+        "valueDate": "2025-08-17",
+        "bookingDateTime": "2025-08-17T09:43:50.326462Z",
+        "valueDateTime": "2025-08-17T14:25:08.481868Z",
+        "transactionAmount": {
+          "amount": "-90.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Pivovar Mj",
+        "remittanceInformationUnstructuredArray": [
+          "Pivovar Mj"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "874.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "e9f5d883ef9aa7dbe87d9940cadea70e"
+      },
+      {
+        "transactionId": "68a1a18c-c231-a47f-8724-80ee13554d78",
+        "bookingDate": "2025-08-17",
+        "valueDate": "2025-08-17",
+        "bookingDateTime": "2025-08-17T09:31:56.283075Z",
+        "valueDateTime": "2025-08-17T14:25:08.399376Z",
+        "transactionAmount": {
+          "amount": "-128.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Angelato Ujezd",
+        "remittanceInformationUnstructuredArray": [
+          "Angelato Ujezd"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "964.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "784e02444d280927037ac7b95711e58a"
+      },
+      {
+        "transactionId": "68a19803-fdf3-a16d-b2b3-46a1aed76d1b",
+        "bookingDate": "2025-08-17",
+        "valueDate": "2025-08-17",
+        "bookingDateTime": "2025-08-17T08:51:15.638348Z",
+        "valueDateTime": "2025-08-17T14:27:27.486726Z",
+        "transactionAmount": {
+          "amount": "-124.00",
+          "currency": "CZK"
+        },
+        "creditorName": "I Love You",
+        "remittanceInformationUnstructuredArray": [
+          "I Love You"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "750.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "619cdbb10d119aad3954e7cdeae3fc12"
+      },
+      {
+        "transactionId": "68a09c91-fb9f-a834-98e5-74734fcc8fc8",
+        "bookingDate": "2025-08-16",
+        "valueDate": "2025-08-17",
+        "bookingDateTime": "2025-08-16T14:58:25.872822Z",
+        "valueDateTime": "2025-08-17T01:31:56.556748Z",
+        "transactionAmount": {
+          "amount": "-529.60",
+          "currency": "CZK"
+        },
+        "creditorName": "Lidl Dekuje Za Nakup",
+        "remittanceInformationUnstructuredArray": [
+          "Lidl Dekuje Za Nakup"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2092.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "476bbc7c43958c5769a00d7cb455c988"
+      },
+      {
+        "transactionId": "68a09366-7c7a-ab83-94f2-78069e4970b9",
+        "bookingDate": "2025-08-16",
+        "valueDate": "2025-08-17",
+        "bookingDateTime": "2025-08-16T14:19:18.336508Z",
+        "valueDateTime": "2025-08-17T01:33:01.064652Z",
+        "transactionAmount": {
+          "amount": "-408.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Cestmirova",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Cestmirova"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "1124.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "d2eb61a7f8c542ebc46f3aff0403ba18"
+      },
+      {
+        "transactionId": "68a091da-df39-a944-bc36-4eea4b47d343",
+        "bookingDate": "2025-08-16",
+        "valueDate": "2025-08-17",
+        "bookingDateTime": "2025-08-16T14:12:42.670898Z",
+        "valueDateTime": "2025-08-17T01:32:03.751353Z",
+        "transactionAmount": {
+          "amount": "-55.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ovoce A Zelenina",
+        "remittanceInformationUnstructuredArray": [
+          "Ovoce A Zelenina"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2037.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "9fd99004cc9060847fc0d45aff9a4299"
+      },
+      {
+        "transactionId": "68a08dde-d9ab-a786-9f92-8637544daaac",
+        "bookingDate": "2025-08-16",
+        "valueDate": "2025-08-17",
+        "bookingDateTime": "2025-08-16T13:55:42.552473Z",
+        "valueDateTime": "2025-08-17T01:32:58.108835Z",
+        "transactionAmount": {
+          "amount": "-505.00",
+          "currency": "CZK"
+        },
+        "creditorName": "The Borsch",
+        "remittanceInformationUnstructuredArray": [
+          "The Borsch"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "1532.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "d9a85985bfb1ea421edd3cb666fada6a"
+      },
+      {
+        "transactionId": "68a08850-b846-a3e5-9a0b-1c090ec29eda",
+        "bookingDate": "2025-08-16",
+        "valueDate": "2025-08-17",
+        "bookingDateTime": "2025-08-16T13:32:00.754822Z",
+        "valueDateTime": "2025-08-17T04:06:12.079694Z",
+        "transactionAmount": {
+          "amount": "-32.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Shin Praha, Korunni",
+        "remittanceInformationUnstructuredArray": [
+          "Shin Praha, Korunni"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "1092.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "031957b79ef0afbf56e906e207ae34b6"
+      },
+      {
+        "transactionId": "689f5bab-211c-a249-9ad8-e4edae40af97",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-16",
+        "bookingDateTime": "2025-08-15T16:09:15.556663Z",
+        "valueDateTime": "2025-08-16T01:30:30.294364Z",
+        "transactionAmount": {
+          "amount": "-437.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Deli Viet",
+        "remittanceInformationUnstructuredArray": [
+          "Deli Viet"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "3829.59",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "e17d75f39099de5b1acecd178bdb8bbf"
+      },
+      {
+        "transactionId": "689f3632-2908-a660-9fe3-f9aa8b067a59",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-16",
+        "bookingDateTime": "2025-08-15T13:29:22.506817Z",
+        "valueDateTime": "2025-08-16T04:45:13.529016Z",
+        "transactionAmount": {
+          "amount": "-27.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Relay Quadrio 31054",
+        "remittanceInformationUnstructuredArray": [
+          "Relay Quadrio 31054"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "3591.59",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "b62336b42d7b803198d57c32d8170bbb"
+      },
+      {
+        "transactionId": "689f31c0-15cc-aa47-a8a2-4ad5ead34ab9",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-16",
+        "bookingDateTime": "2025-08-15T13:10:24.036488Z",
+        "valueDateTime": "2025-08-16T01:30:25.241535Z",
+        "transactionAmount": {
+          "amount": "-175.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ugo Salaterie 5091",
+        "remittanceInformationUnstructuredArray": [
+          "Ugo Salaterie 5091"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "4266.59",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "46b9574c8cbdb157de08d6a9035688ce"
+      },
+      {
+        "transactionId": "689efc28-4e73-a789-aa0b-067792f05d04",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-16",
+        "bookingDateTime": "2025-08-15T09:21:44.459869Z",
+        "valueDateTime": "2025-08-16T04:46:22.605856Z",
+        "transactionAmount": {
+          "amount": "-299.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Mastro Casaro S.r.o. 0",
+        "remittanceInformationUnstructuredArray": [
+          "Mastro Casaro S.r.o. 0"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "3292.59",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "cbbc802f431db93576d2a6926263b331"
+      },
+      {
+        "transactionId": "689ef438-8bef-a6f7-bd14-0024e0953838",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-16",
+        "bookingDateTime": "2025-08-15T08:47:52.475747Z",
+        "valueDateTime": "2025-08-16T04:50:17.618834Z",
+        "transactionAmount": {
+          "amount": "-179.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Shin Praha, V Celnici",
+        "remittanceInformationUnstructuredArray": [
+          "Shin Praha, V Celnici"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "3113.59",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "5df5dfaac63b333f133cbea582772201"
+      },
+      {
+        "transactionId": "689ef276-ec8c-a3b2-a028-f90c04a656d2",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-16",
+        "bookingDateTime": "2025-08-15T08:40:22.507790Z",
+        "valueDateTime": "2025-08-16T04:50:17.859740Z",
+        "transactionAmount": {
+          "amount": "-179.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Tescoma - Pct Palladiu",
+        "remittanceInformationUnstructuredArray": [
+          "Tescoma - Pct Palladiu"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2934.59",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "41771749618f0575737c89b713304fb2"
+      },
+      {
+        "transactionId": "689eed99-3eca-a4eb-a403-f702ead1489e",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-16",
+        "bookingDateTime": "2025-08-15T08:19:37.910955Z",
+        "valueDateTime": "2025-08-16T12:05:27.022006Z",
+        "transactionAmount": {
+          "amount": "-312.60",
+          "currency": "CZK"
+        },
+        "creditorName": "Tesco Praha Narodni",
+        "remittanceInformationUnstructuredArray": [
+          "Tesco Praha Narodni"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2621.99",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "4989e6adbe413054f638f8c561f1b43e"
+      },
+      {
+        "transactionId": "689ee34a-029b-a2b6-8d6b-96ff6e7e4e68",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-16",
+        "bookingDateTime": "2025-08-15T07:35:38.102273Z",
+        "valueDateTime": "2025-08-16T01:30:30.366098Z",
+        "transactionAmount": {
+          "amount": "-211.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Truhlarna",
+        "remittanceInformationUnstructuredArray": [
+          "Truhlarna"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "3618.59",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "d6f8d4eb32a675e359b3c5caeaddf0e7"
+      },
+      {
+        "transactionId": "689ee175-dc55-ab46-a16d-906c2b100427",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-16",
+        "bookingDateTime": "2025-08-15T07:27:49.309787Z",
+        "valueDateTime": "2025-08-16T01:30:25.008892Z",
+        "transactionAmount": {
+          "amount": "-67.80",
+          "currency": "CZK"
+        },
+        "creditorName": "Lidl Dekuje Za Nakup",
+        "remittanceInformationUnstructuredArray": [
+          "Lidl Dekuje Za Nakup"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "4441.59",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "63f4e7df22580364eab69750a2293abc"
+      },
+      {
+        "transactionId": "689f0b28-7580-a8cc-839c-540ef2d2bb4d",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-15",
+        "bookingDateTime": "2025-08-15T10:25:44.395726Z",
+        "valueDateTime": "2025-08-15T10:25:44.396158Z",
+        "transactionAmount": {
+          "amount": "3148.77",
+          "currency": "CZK"
+        },
+        "currencyExchange": {
+          "instructedAmount": {
+            "amount": "3148.77",
+            "currency": "CZK"
+          },
+          "sourceCurrency": "PLN",
+          "exchangeRate": "5.7250439806812258",
+          "unitCurrency": "PLN",
+          "targetCurrency": "CZK"
+        },
+        "remittanceInformationUnstructuredArray": [
+          "Exchanged to CZK"
+        ],
+        "proprietaryBankTransactionCode": "EXCHANGE",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "4967.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "internalTransactionId": "e668ab2be293274ec498743e4740d2ce"
+      },
+      {
+        "transactionId": "689ed668-fad5-aff3-a46c-f7c362e869f1",
+        "bookingDate": "2025-08-15",
+        "valueDate": "2025-08-15",
+        "bookingDateTime": "2025-08-15T06:40:40.385529Z",
+        "valueDateTime": "2025-08-15T14:31:49.764829Z",
+        "transactionAmount": {
+          "amount": "-458.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "4509.39",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "d55790216f30f3381422d49744f6cabb"
+      },
+      {
+        "transactionId": "689dfe00-015b-ad78-9b2d-0ea4740ff443",
+        "bookingDate": "2025-08-14",
+        "valueDate": "2025-08-15",
+        "bookingDateTime": "2025-08-14T15:17:20.428912Z",
+        "valueDateTime": "2025-08-15T01:26:18.282051Z",
+        "transactionAmount": {
+          "amount": "-64.90",
+          "currency": "CZK"
+        },
+        "creditorName": "Lidl Dekuje Za Nakup",
+        "remittanceInformationUnstructuredArray": [
+          "Lidl Dekuje Za Nakup"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2197.62",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "505775a035dace7d598db82dfcb974ff"
+      },
+      {
+        "transactionId": "689da761-3b8c-a21d-93dd-03b4a8e107ea",
+        "bookingDate": "2025-08-14",
+        "valueDate": "2025-08-15",
+        "bookingDateTime": "2025-08-14T09:07:45.824579Z",
+        "valueDateTime": "2025-08-15T04:48:16.705151Z",
+        "transactionAmount": {
+          "amount": "-79.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Tisse Nuselska",
+        "remittanceInformationUnstructuredArray": [
+          "Tisse Nuselska"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2118.62",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "a2799fbd87df7a28dd14908070d4f3ac"
+      },
+      {
+        "transactionId": "689da74d-b099-a57f-abaa-6593ce16294a",
+        "bookingDate": "2025-08-14",
+        "valueDate": "2025-08-15",
+        "bookingDateTime": "2025-08-14T09:07:25.953183Z",
+        "valueDateTime": "2025-08-15T04:48:18.989801Z",
+        "transactionAmount": {
+          "amount": "-300.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Tisse Nuselska",
+        "remittanceInformationUnstructuredArray": [
+          "Tisse Nuselska"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "1818.62",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "0ee5814ec5c208a91a94e3b2ff5baf2f"
+      },
+      {
+        "transactionId": "689d0c95-b804-a8da-9873-83576d2db1fd",
+        "bookingDate": "2025-08-13",
+        "valueDate": "2025-08-14",
+        "bookingDateTime": "2025-08-13T22:07:17.937817Z",
+        "valueDateTime": "2025-08-14T04:59:42.919065Z",
+        "transactionAmount": {
+          "amount": "-599.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Nvidia Corporation",
+        "remittanceInformationUnstructuredArray": [
+          "Nvidia Corporation"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2387.52",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "547e5aa3610e9748f00b218ea3a33ada"
+      },
+      {
+        "transactionId": "689cbe95-44ca-ae97-a8cc-d14fce654ecb",
+        "bookingDate": "2025-08-13",
+        "valueDate": "2025-08-14",
+        "bookingDateTime": "2025-08-13T16:34:29.499220Z",
+        "valueDateTime": "2025-08-14T04:51:54.711216Z",
+        "transactionAmount": {
+          "amount": "-79.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Paul-quadrio - Kiosk 6",
+        "remittanceInformationUnstructuredArray": [
+          "Paul-Quadrio - Kiosk 6"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "3529.28",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "e4d8c7b27502faa8be9ca80f1f40d670"
+      },
+      {
+        "transactionId": "689cbae6-dbe7-a11b-99bb-11c110864fcc",
+        "bookingDate": "2025-08-13",
+        "valueDate": "2025-08-14",
+        "bookingDateTime": "2025-08-13T16:18:46.429626Z",
+        "valueDateTime": "2025-08-14T01:30:45.125482Z",
+        "transactionAmount": {
+          "amount": "-320.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ugo Salaterie 5091",
+        "remittanceInformationUnstructuredArray": [
+          "Ugo Salaterie 5091"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "4565.28",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "514961843744fd346bf95a71d9d8e0b7"
+      },
+      {
+        "transactionId": "689cb1dc-66ae-abce-96f0-f7ca50944d75",
+        "bookingDate": "2025-08-13",
+        "valueDate": "2025-08-14",
+        "bookingDateTime": "2025-08-13T15:40:12.382044Z",
+        "valueDateTime": "2025-08-14T01:32:22.947048Z",
+        "transactionAmount": {
+          "amount": "-90.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Cafe Mosaic",
+        "remittanceInformationUnstructuredArray": [
+          "Cafe Mosaic"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "4475.28",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "c739bc66f64b4d81c90b0d28b914ccd1"
+      },
+      {
+        "transactionId": "689c6a7e-3236-a943-8f7b-e7ed1ef123f0",
+        "bookingDate": "2025-08-13",
+        "valueDate": "2025-08-14",
+        "bookingDateTime": "2025-08-13T10:35:42.454703Z",
+        "valueDateTime": "2025-08-14T01:30:42.841136Z",
+        "transactionAmount": {
+          "amount": "-338.90",
+          "currency": "CZK"
+        },
+        "creditorName": "Lidl Dekuje Za Nakup",
+        "remittanceInformationUnstructuredArray": [
+          "Lidl Dekuje Za Nakup"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "4885.28",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "3309a3284bcbba73cfec8ca76f70a257"
+      },
+      {
+        "transactionId": "689c4177-0f08-a993-b93a-fb21ca17919f",
+        "bookingDate": "2025-08-13",
+        "valueDate": "2025-08-14",
+        "bookingDateTime": "2025-08-13T07:40:39.440540Z",
+        "valueDateTime": "2025-08-14T08:03:47.938941Z",
+        "transactionAmount": {
+          "amount": "-125.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Bastova Zmrzlinarna",
+        "remittanceInformationUnstructuredArray": [
+          "Bastova Zmrzlinarna"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2262.52",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "b44717dbeda1d3193202ab943399fc45"
+      },
+      {
+        "transactionId": "689c3c06-dbce-acac-91ef-50c942a50692",
+        "bookingDate": "2025-08-13",
+        "valueDate": "2025-08-14",
+        "bookingDateTime": "2025-08-13T07:17:26.015905Z",
+        "valueDateTime": "2025-08-14T04:52:54.387032Z",
+        "transactionAmount": {
+          "amount": "-542.76",
+          "currency": "CZK"
+        },
+        "creditorName": "Tesco Praha Narodni",
+        "remittanceInformationUnstructuredArray": [
+          "Tesco Praha Narodni"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2986.52",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "35137942791b4f44b8b6c7098e94c5b2"
+      },
+      {
+        "transactionId": "689b7e0d-7f4c-a0da-8e07-572d53dbe5ba",
+        "bookingDate": "2025-08-12",
+        "valueDate": "2025-08-14",
+        "bookingDateTime": "2025-08-12T17:46:53.688991Z",
+        "valueDateTime": "2025-08-14T01:35:39.572229Z",
+        "transactionAmount": {
+          "amount": "-867.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Dekujeme, Foodora.cz",
+        "remittanceInformationUnstructuredArray": [
+          "Dekujeme, Foodora.cz"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "3608.28",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "d4e8621ddf6cfa240c859d543b6d3097"
+      },
+      {
+        "transactionId": "689c3118-5825-ab76-bb72-f272e1199e2d",
+        "bookingDate": "2025-08-13",
+        "valueDate": "2025-08-13",
+        "bookingDateTime": "2025-08-13T06:30:48.677149Z",
+        "valueDateTime": "2025-08-13T17:27:21.084605Z",
+        "transactionAmount": {
+          "amount": "-414.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "5224.18",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "362460748cc7ffdc5c8588441c8376e3"
+      },
+      {
+        "transactionId": "68999f79-3431-a58a-908b-17d2b861e5b7",
+        "bookingDate": "2025-08-11",
+        "valueDate": "2025-08-12",
+        "bookingDateTime": "2025-08-11T07:44:57.468648Z",
+        "valueDateTime": "2025-08-12T02:10:12.296239Z",
+        "transactionAmount": {
+          "amount": "-69.90",
+          "currency": "CZK"
+        },
+        "creditorName": "Teta Drogerie 356",
+        "remittanceInformationUnstructuredArray": [
+          "Teta Drogerie 356"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "6356.24",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "c28f5bd452c6ba644b2502e3ed2ac96e"
+      },
+      {
+        "transactionId": "689999d7-3d15-a49c-98ef-950ecf2648ea",
+        "bookingDate": "2025-08-11",
+        "valueDate": "2025-08-12",
+        "bookingDateTime": "2025-08-11T07:20:55.545677Z",
+        "valueDateTime": "2025-08-12T04:40:02.454402Z",
+        "transactionAmount": {
+          "amount": "-300.06",
+          "currency": "CZK"
+        },
+        "creditorName": "Tesco Praha Narodni",
+        "remittanceInformationUnstructuredArray": [
+          "Tesco Praha Narodni"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "6056.18",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "88b1bdecc850583226181c68369f7c63"
+      },
+      {
+        "transactionId": "689884e6-c983-a841-be04-d16934d4ed70",
+        "bookingDate": "2025-08-10",
+        "valueDate": "2025-08-12",
+        "bookingDateTime": "2025-08-10T11:39:18.555733Z",
+        "valueDateTime": "2025-08-12T15:02:46.674701Z",
+        "transactionAmount": {
+          "amount": "-418.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Kavarna Novy Svet",
+        "remittanceInformationUnstructuredArray": [
+          "Kavarna Novy Svet"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "5638.18",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "32ee691c33b8960c268f5d1922a11272"
+      },
+      {
+        "transactionId": "68999034-67c2-a8a0-a4c7-2c604c0fad18",
+        "bookingDate": "2025-08-11",
+        "valueDate": "2025-08-11",
+        "bookingDateTime": "2025-08-11T06:39:48.791475Z",
+        "valueDateTime": "2025-08-11T15:16:05.632170Z",
+        "transactionAmount": {
+          "amount": "-75.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "6426.14",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "f290fbab7d1fde710c957a1b0c86723f"
+      },
+      {
+        "transactionId": "68998e13-dc40-afbe-bfb3-237270a568ab",
+        "bookingDate": "2025-08-11",
+        "valueDate": "2025-08-11",
+        "bookingDateTime": "2025-08-11T06:30:43.154733Z",
+        "valueDateTime": "2025-08-11T15:16:02.771720Z",
+        "transactionAmount": {
+          "amount": "-313.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "6501.14",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "8dcb0eb5b6b1312a707c5e5e849a3581"
+      },
+      {
+        "transactionId": "68989da4-474b-a67a-bb93-7c85e6ab597b",
+        "bookingDate": "2025-08-10",
+        "valueDate": "2025-08-11",
+        "bookingDateTime": "2025-08-10T13:24:52.172374Z",
+        "valueDateTime": "2025-08-11T01:59:11.792043Z",
+        "transactionAmount": {
+          "amount": "-434.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ugo Salaterie 5208",
+        "remittanceInformationUnstructuredArray": [
+          "Ugo Salaterie 5208"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "7374.94",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "bfc89851d183a9be7e78e68886cfacb3"
+      },
+      {
+        "transactionId": "68989c6e-59a7-a32a-a053-30b8013ef820",
+        "bookingDate": "2025-08-10",
+        "valueDate": "2025-08-11",
+        "bookingDateTime": "2025-08-10T13:19:42.308858Z",
+        "valueDateTime": "2025-08-11T01:59:19.920136Z",
+        "transactionAmount": {
+          "amount": "-245.80",
+          "currency": "CZK"
+        },
+        "creditorName": "Dm Drogerie Markt 500",
+        "remittanceInformationUnstructuredArray": [
+          "Dm Drogerie Markt 500"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "7129.14",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "f117b1b3d8dae8686ff79bc607f5b912"
+      },
+      {
+        "transactionId": "68989b70-4ed1-ab41-9f1a-12fb43d8a4d3",
+        "bookingDate": "2025-08-10",
+        "valueDate": "2025-08-11",
+        "bookingDateTime": "2025-08-10T13:15:28.674995Z",
+        "valueDateTime": "2025-08-11T04:51:43.968114Z",
+        "transactionAmount": {
+          "amount": "-288.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Decathlon Praha N.smic",
+        "remittanceInformationUnstructuredArray": [
+          "Decathlon Praha N.smic"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "6814.14",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "a41759e764510fdf63d8cc9072a70e41"
+      },
+      {
+        "transactionId": "68989886-8141-a5b6-bf0d-e7529adcd0b4",
+        "bookingDate": "2025-08-10",
+        "valueDate": "2025-08-11",
+        "bookingDateTime": "2025-08-10T13:03:02.857988Z",
+        "valueDateTime": "2025-08-11T04:45:40.455542Z",
+        "transactionAmount": {
+          "amount": "-27.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Praha Zlaty Andel 3101",
+        "remittanceInformationUnstructuredArray": [
+          "Praha Zlaty Andel 3101"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "7102.14",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "41a3560f03321e3eb7c5c6571197a7c9"
+      },
+      {
+        "transactionId": "68986a39-f62f-a4c8-802b-41fefa7eda1d",
+        "bookingDate": "2025-08-10",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-10T09:45:29.570429Z",
+        "valueDateTime": "2025-08-10T15:09:37.247582Z",
+        "transactionAmount": {
+          "amount": "-1050.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Kavarna Zanzibar",
+        "remittanceInformationUnstructuredArray": [
+          "Kavarna Zanzibar"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "7808.94",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "dd614853db39f300f20dc4abaae1bf5b"
+      },
+      {
+        "transactionId": "6897d53f-64b4-a3bd-a7ca-1cb39ce81352",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T23:09:51.543448Z",
+        "valueDateTime": "2025-08-10T04:17:50.064586Z",
+        "transactionAmount": {
+          "amount": "-230.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Bolt.eu",
+        "remittanceInformationUnstructuredArray": [
+          "bolt.eu/o/2508092309"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "10321.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "baff167b6aea30f2116c3e076fdfbd31"
+      },
+      {
+        "transactionId": "6897b8e2-028c-a19b-8db1-3c0ba5324541",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T21:08:50.641999Z",
+        "valueDateTime": "2025-08-10T11:18:58.539521Z",
+        "transactionAmount": {
+          "amount": "-276.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Tankovna Karlin",
+        "remittanceInformationUnstructuredArray": [
+          "Tankovna Karlin"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "9632.94",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "2f5072054c795682d276156aca9f5498"
+      },
+      {
+        "transactionId": "6897b051-f87f-ae4a-9ed7-07e8b074fa4f",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T20:32:17.549122Z",
+        "valueDateTime": "2025-08-10T04:26:19.819336Z",
+        "transactionAmount": {
+          "amount": "-165.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Mcd Karlin",
+        "remittanceInformationUnstructuredArray": [
+          "Mcd Karlin"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "10156.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "63c2146b5f99936f3378f79d74328436"
+      },
+      {
+        "transactionId": "68978cae-aeee-a34f-a36a-e490c85e513f",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T18:00:14.580785Z",
+        "valueDateTime": "2025-08-10T01:58:52.189178Z",
+        "transactionAmount": {
+          "amount": "-465.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Restaurant Nasi",
+        "remittanceInformationUnstructuredArray": [
+          "Restaurant Nasi"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "10551.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "e39bfe0e0e99388c6f60b560210150bc"
+      },
+      {
+        "transactionId": "68976c90-ea70-a12b-b737-d54fa3358052",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T15:43:12.481586Z",
+        "valueDateTime": "2025-08-10T01:57:42.058064Z",
+        "transactionAmount": {
+          "amount": "-50.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Plavec. Stadion Podol",
+        "remittanceInformationUnstructuredArray": [
+          "Plavec. Stadion Podoli"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "11616.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "76aef3fb95067d776baf8b59cfec34ab"
+      },
+      {
+        "transactionId": "6897386d-1921-a15d-91c3-5b8f8bc27123",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T12:00:45.981543Z",
+        "valueDateTime": "2025-08-10T01:57:44.110667Z",
+        "transactionAmount": {
+          "amount": "-600.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Plavecky Stadion Podo",
+        "remittanceInformationUnstructuredArray": [
+          "Plavecky Stadion Podol"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "11016.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "71ca8dec11f2e39d9599653fe71a74a4"
+      },
+      {
+        "transactionId": "68973479-25b9-a9d9-b610-53dd1443e36b",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T11:43:53.581355Z",
+        "valueDateTime": "2025-08-10T10:53:25.645143Z",
+        "transactionAmount": {
+          "amount": "-247.50",
+          "currency": "CZK"
+        },
+        "creditorName": "Cafe Terapie",
+        "remittanceInformationUnstructuredArray": [
+          "Cafe Terapie"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "9908.94",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "498bb213800ad510e2d13443ae014746"
+      },
+      {
+        "transactionId": "68971fff-3fbb-a6d2-a307-61dc29f859ef",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T10:16:31.956605Z",
+        "valueDateTime": "2025-08-10T11:59:52.920491Z",
+        "transactionAmount": {
+          "amount": "-110.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Tisse Nuselska",
+        "remittanceInformationUnstructuredArray": [
+          "Tisse Nuselska"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "8858.94",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "f6aaeb23993b0cbf5e369488d02675e4"
+      },
+      {
+        "transactionId": "68970f76-9ad2-a5a5-b1e9-658fb0173228",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T09:05:58.777797Z",
+        "valueDateTime": "2025-08-10T11:59:47.829358Z",
+        "transactionAmount": {
+          "amount": "-180.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Tisse Nuselska",
+        "remittanceInformationUnstructuredArray": [
+          "Tisse Nuselska"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "9452.94",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "46919fd2a481a8bb4dca3ecea98485ee"
+      },
+      {
+        "transactionId": "68970a50-9157-a5b5-9df1-0838d73344fe",
+        "bookingDate": "2025-08-09",
+        "valueDate": "2025-08-10",
+        "bookingDateTime": "2025-08-09T08:44:00.564310Z",
+        "valueDateTime": "2025-08-10T11:59:52.679082Z",
+        "transactionAmount": {
+          "amount": "-484.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Tisse Nuselska",
+        "remittanceInformationUnstructuredArray": [
+          "Tisse Nuselska"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "8968.94",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "181cf47360b5c9b4b9534588f5d3c574"
+      },
+      {
+        "transactionId": "68967bf7-43c4-aa11-bb27-8ca6c47970f6",
+        "bookingDate": "2025-08-08",
+        "valueDate": "2025-08-09",
+        "bookingDateTime": "2025-08-08T22:36:39.358778Z",
+        "valueDateTime": "2025-08-09T04:26:08.517540Z",
+        "transactionAmount": {
+          "amount": "-135.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Bolt.eu",
+        "remittanceInformationUnstructuredArray": [
+          "bolt.eu/o/2508082236"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "13085.92",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "b3aee4ea8e23c16e7d57a74ac3f0401c"
+      },
+      {
+        "transactionId": "68963b81-35c4-a80c-80a6-397b573246eb",
+        "bookingDate": "2025-08-08",
+        "valueDate": "2025-08-09",
+        "bookingDateTime": "2025-08-08T18:01:37.204952Z",
+        "valueDateTime": "2025-08-09T04:29:43.633454Z",
+        "transactionAmount": {
+          "amount": "-60.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Relay Flora",
+        "remittanceInformationUnstructuredArray": [
+          "Relay Flora"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "12998.92",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "8606803a0cbfb922793c281dd25f9786"
+      },
+      {
+        "transactionId": "6896314d-b6ab-a850-bbf7-2208fcbd5c7f",
+        "bookingDate": "2025-08-08",
+        "valueDate": "2025-08-09",
+        "bookingDateTime": "2025-08-08T17:18:05.178384Z",
+        "valueDateTime": "2025-08-09T01:28:19.590131Z",
+        "transactionAmount": {
+          "amount": "-335.93",
+          "currency": "CZK"
+        },
+        "creditorName": "Lidl Dekuje Za Nakup",
+        "remittanceInformationUnstructuredArray": [
+          "Lidl Dekuje Za Nakup"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "13400.92",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "f2950a6aa1694934056b5638c1bba351"
+      },
+      {
+        "transactionId": "689623c6-4253-aada-bd98-5a57003af705",
+        "bookingDate": "2025-08-08",
+        "valueDate": "2025-08-09",
+        "bookingDateTime": "2025-08-08T16:20:22.676177Z",
+        "valueDateTime": "2025-08-09T04:29:43.311017Z",
+        "transactionAmount": {
+          "amount": "-27.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Relay Quadrio 31054",
+        "remittanceInformationUnstructuredArray": [
+          "Relay Quadrio 31054"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "13058.92",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "36a7c3d9172382d117f4050b1e42355e"
+      },
+      {
+        "transactionId": "6895ede8-2946-a3d7-b063-9079ce237172",
+        "bookingDate": "2025-08-08",
+        "valueDate": "2025-08-09",
+        "bookingDateTime": "2025-08-08T12:30:32.918630Z",
+        "valueDateTime": "2025-08-09T01:30:36.450759Z",
+        "transactionAmount": {
+          "amount": "-180.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Cafe Mosaic",
+        "remittanceInformationUnstructuredArray": [
+          "Cafe Mosaic"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "13220.92",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "97b1325575c8a453526a2f9c20575ae9"
+      },
+      {
+        "transactionId": "6895ed02-cba0-a2a5-88cb-a329bb746920",
+        "bookingDate": "2025-08-08",
+        "valueDate": "2025-08-09",
+        "bookingDateTime": "2025-08-08T12:26:42.222623Z",
+        "valueDateTime": "2025-08-09T11:52:26.010217Z",
+        "transactionAmount": {
+          "amount": "-375.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Indian Indeal",
+        "remittanceInformationUnstructuredArray": [
+          "Indian Indeal"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "12256.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "1e7995107e9c38244dcb53cf79d1262f"
+      },
+      {
+        "transactionId": "6895a5d0-36b2-a5e4-8893-d1346cbbf593",
+        "bookingDate": "2025-08-08",
+        "valueDate": "2025-08-09",
+        "bookingDateTime": "2025-08-08T07:22:56.365185Z",
+        "valueDateTime": "2025-08-09T11:52:20.116865Z",
+        "transactionAmount": {
+          "amount": "-367.48",
+          "currency": "CZK"
+        },
+        "creditorName": "Tesco Praha Narodni",
+        "remittanceInformationUnstructuredArray": [
+          "Tesco Praha Narodni"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "12631.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "3d18a36d977c572699f4d3195080c16d"
+      },
+      {
+        "transactionId": "6894ce35-fa1b-aa39-91e5-72005503a02a",
+        "bookingDate": "2025-08-07",
+        "valueDate": "2025-08-09",
+        "bookingDateTime": "2025-08-07T16:03:01.774384Z",
+        "valueDateTime": "2025-08-09T11:52:26.381033Z",
+        "transactionAmount": {
+          "amount": "-590.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Myata Lounge",
+        "remittanceInformationUnstructuredArray": [
+          "Myata Lounge"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "11666.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "943d07553c62c634cd35c836ca6bfb99"
+      },
+      {
+        "transactionId": "68959e79-79d3-a14e-abb4-aff1e2695aab",
+        "bookingDate": "2025-08-08",
+        "valueDate": "2025-08-08",
+        "bookingDateTime": "2025-08-08T06:51:37.463091Z",
+        "valueDateTime": "2025-08-08T15:44:49.866887Z",
+        "transactionAmount": {
+          "amount": "-35.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "14035.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "fbbd7bb1bf2f7190c51738d2e526ba9f"
+      },
+      {
+        "transactionId": "689599df-076d-a1f1-b253-0402af94d051",
+        "bookingDate": "2025-08-08",
+        "valueDate": "2025-08-08",
+        "bookingDateTime": "2025-08-08T06:31:59.293289Z",
+        "valueDateTime": "2025-08-08T15:44:54.211769Z",
+        "transactionAmount": {
+          "amount": "-299.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "13736.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "9e7b7a754cc923aa507efa34ff5a6a5f"
+      },
+      {
+        "transactionId": "6895020b-c867-a4a8-96a8-c0386f704028",
+        "bookingDate": "2025-08-07",
+        "valueDate": "2025-08-08",
+        "bookingDateTime": "2025-08-07T19:44:11.648079Z",
+        "valueDateTime": "2025-08-08T01:50:11.216821Z",
+        "transactionAmount": {
+          "amount": "-110.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Kellyxir",
+        "remittanceInformationUnstructuredArray": [
+          "Kellyxir"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "14485.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "51410c009dabc7dba9f9514e85f43cc0"
+      },
+      {
+        "transactionId": "6894d975-377c-a8e7-b75b-2ab1d217c83e",
+        "bookingDate": "2025-08-07",
+        "valueDate": "2025-08-08",
+        "bookingDateTime": "2025-08-07T16:51:01.763291Z",
+        "valueDateTime": "2025-08-08T01:35:55.212398Z",
+        "transactionAmount": {
+          "amount": "-69.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Angelato Ujezd",
+        "remittanceInformationUnstructuredArray": [
+          "Angelato Ujezd"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "14595.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "d7f826df46f50296749f1fb794b86595"
+      },
+      {
+        "transactionId": "6894d2b6-4b1f-af06-9bd4-f1a52c638438",
+        "bookingDate": "2025-08-07",
+        "valueDate": "2025-08-08",
+        "bookingDateTime": "2025-08-07T16:22:14.857615Z",
+        "valueDateTime": "2025-08-08T01:35:52.748282Z",
+        "transactionAmount": {
+          "amount": "-109.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Angelato Ujezd",
+        "remittanceInformationUnstructuredArray": [
+          "Angelato Ujezd"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "14664.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "b0a27dcf7ca9c064210ba0fe6fb3b5c8"
+      },
+      {
+        "transactionId": "68949e0f-ac54-a3ff-8a97-8ccaf423d634",
+        "bookingDate": "2025-08-07",
+        "valueDate": "2025-08-08",
+        "bookingDateTime": "2025-08-07T12:37:35.087182Z",
+        "valueDateTime": "2025-08-08T01:34:37.800047Z",
+        "transactionAmount": {
+          "amount": "-175.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ugo Salaterie 5208",
+        "remittanceInformationUnstructuredArray": [
+          "Ugo Salaterie 5208"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "14773.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "946175a883ccd0023a892ab4cdb09c72"
+      },
+      {
+        "transactionId": "68947736-c490-a24d-aebb-9430c384004f",
+        "bookingDate": "2025-08-07",
+        "valueDate": "2025-08-08",
+        "bookingDateTime": "2025-08-07T09:51:50.913394Z",
+        "valueDateTime": "2025-08-08T08:31:36.686664Z",
+        "transactionAmount": {
+          "amount": "-95.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Vnitroblock",
+        "remittanceInformationUnstructuredArray": [
+          "Vnitroblock"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "14070.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "3cb1f69a6443cbb3fce0cbca39d84932"
+      },
+      {
+        "transactionId": "68946921-0fc4-ab5a-9ac0-2375fc2b03da",
+        "bookingDate": "2025-08-07",
+        "valueDate": "2025-08-08",
+        "bookingDateTime": "2025-08-07T08:51:45.340171Z",
+        "valueDateTime": "2025-08-08T04:48:51.144559Z",
+        "transactionAmount": {
+          "amount": "-320.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Tisse Nuselska",
+        "remittanceInformationUnstructuredArray": [
+          "Tisse Nuselska"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "14165.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "76236847bc6d12c9326359299b51b6a0"
+      },
+      {
+        "transactionId": "68939527-8f0f-a68f-9374-2240d7e84742",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-07",
+        "bookingDateTime": "2025-08-06T17:47:19.108355Z",
+        "valueDateTime": "2025-08-07T04:50:38.814018Z",
+        "transactionAmount": {
+          "amount": "-1284.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Chateau Safarikova",
+        "remittanceInformationUnstructuredArray": [
+          "Chateau Safarikova"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "15447.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "0b4778982a34ced7696af729c9fcbbb4"
+      },
+      {
+        "transactionId": "689383cc-2cdf-a63b-aa93-ac9d274c34f5",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-07",
+        "bookingDateTime": "2025-08-06T16:33:16.199502Z",
+        "valueDateTime": "2025-08-07T04:50:38.518075Z",
+        "transactionAmount": {
+          "amount": "-350.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Polevkarna",
+        "remittanceInformationUnstructuredArray": [
+          "Polevkarna"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "16731.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "81d316923c24b233695bf0046e3df7e0"
+      },
+      {
+        "transactionId": "68937d6b-8609-a6c6-a597-f1c00d9755ca",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-07",
+        "bookingDateTime": "2025-08-06T16:06:03.332514Z",
+        "valueDateTime": "2025-08-07T01:53:55.349124Z",
+        "transactionAmount": {
+          "amount": "-389.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Google Youtubepremium",
+        "remittanceInformationUnstructuredArray": [
+          "Google Youtubepremium"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "17081.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "8e0df70a9c90d7e373b56e16ae2cdba4"
+      },
+      {
+        "transactionId": "689366ee-cec6-a22d-9c20-523f53087bca",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-07",
+        "bookingDateTime": "2025-08-06T14:30:06.498613Z",
+        "valueDateTime": "2025-08-07T01:35:21.457776Z",
+        "transactionAmount": {
+          "amount": "-229.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ugo Salaterie 5048",
+        "remittanceInformationUnstructuredArray": [
+          "Ugo Salaterie 5048"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "17687.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "f3c2d5d3537eb473aef4d77258532ff5"
+      },
+      {
+        "transactionId": "68933326-41dd-a238-9498-2ef8983f1cb8",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-07",
+        "bookingDateTime": "2025-08-06T10:49:10.175776Z",
+        "valueDateTime": "2025-08-07T13:51:23.540082Z",
+        "transactionAmount": {
+          "amount": "-95.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Vnitroblock",
+        "remittanceInformationUnstructuredArray": [
+          "Vnitroblock"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "15173.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "d0bb7352ddd146acfd7cb361dc0d5874"
+      },
+      {
+        "transactionId": "68932c04-a887-ad0e-a155-d9cabaad2ca4",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-07",
+        "bookingDateTime": "2025-08-06T10:18:44.370280Z",
+        "valueDateTime": "2025-08-07T13:51:23.816462Z",
+        "transactionAmount": {
+          "amount": "-225.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Vnitroblock",
+        "remittanceInformationUnstructuredArray": [
+          "Vnitroblock"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "14948.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "3434751696702ea1f6cc81293b9a80fa"
+      },
+      {
+        "transactionId": "68932310-c255-a447-a1e0-329e63bfffc6",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-07",
+        "bookingDateTime": "2025-08-06T09:40:32.381977Z",
+        "valueDateTime": "2025-08-07T04:50:44.199351Z",
+        "transactionAmount": {
+          "amount": "-179.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Datart",
+        "remittanceInformationUnstructuredArray": [
+          "Datart"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "15268.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "507ac7d865db75f1f986f0932d94faa5"
+      },
+      {
+        "transactionId": "6893008f-3f7e-a37c-a61d-984e96a094da",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-07",
+        "bookingDateTime": "2025-08-06T07:13:19.883272Z",
+        "valueDateTime": "2025-08-07T01:35:26.055335Z",
+        "transactionAmount": {
+          "amount": "-217.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Truhlarna",
+        "remittanceInformationUnstructuredArray": [
+          "Truhlarna"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "17470.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "f3fac3dac2b126094274ca788462a766"
+      },
+      {
+        "transactionId": "6892f839-f01e-a632-95f2-3464865e8d04",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-06",
+        "bookingDateTime": "2025-08-06T06:37:45.937558Z",
+        "valueDateTime": "2025-08-06T06:37:45.938130Z",
+        "transactionAmount": {
+          "amount": "2586.35",
+          "currency": "CZK"
+        },
+        "currencyExchange": {
+          "instructedAmount": {
+            "amount": "2586.35",
+            "currency": "CZK"
+          },
+          "sourceCurrency": "PLN",
+          "exchangeRate": "5.7221405327846825",
+          "unitCurrency": "PLN",
+          "targetCurrency": "CZK"
+        },
+        "remittanceInformationUnstructuredArray": [
+          "Exchanged to CZK"
+        ],
+        "proprietaryBankTransactionCode": "EXCHANGE",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "18279.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "internalTransactionId": "4f865a628c0cccd6ee5129fb7b9e4bc2"
+      },
+      {
+        "transactionId": "6892f6ed-04c3-a84a-b72b-387762183a36",
+        "bookingDate": "2025-08-06",
+        "valueDate": "2025-08-06",
+        "bookingDateTime": "2025-08-06T06:32:13.895921Z",
+        "valueDateTime": "2025-08-06T16:18:19.143548Z",
+        "transactionAmount": {
+          "amount": "-343.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "17916.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "d5527a3e6ba53c70a082a767c64f8b7b"
+      },
+      {
+        "transactionId": "689253d3-dc76-a00d-95de-b5793301bd07",
+        "bookingDate": "2025-08-05",
+        "valueDate": "2025-08-06",
+        "bookingDateTime": "2025-08-05T18:56:19.233825Z",
+        "valueDateTime": "2025-08-06T02:01:14.473836Z",
+        "transactionAmount": {
+          "amount": "-169.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Spotify P3941fc61b",
+        "remittanceInformationUnstructuredArray": [
+          "Spotify P3941fc61b"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "15693.50",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "9107c47372753a6363a56143971c5027"
+      },
+      {
+        "transactionId": "6890df18-cb54-a111-bd9f-4d7788c858da",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-06",
+        "bookingDateTime": "2025-08-04T16:26:00.286251Z",
+        "valueDateTime": "2025-08-06T14:04:26.504061Z",
+        "transactionAmount": {
+          "amount": "-20.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Rpm Service Cz A.s.",
+        "remittanceInformationUnstructuredArray": [
+          "Rpm Service Cz A.s."
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "18259.85",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "8ff0dc5b888be14c6e52838f94735fe5"
+      },
+      {
+        "transactionId": "6890eb69-3431-abb2-9706-14d28f9ccd99",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-05",
+        "bookingDateTime": "2025-08-04T17:18:33.571334Z",
+        "valueDateTime": "2025-08-05T02:39:18.847099Z",
+        "transactionAmount": {
+          "amount": "-354.47",
+          "currency": "CZK"
+        },
+        "creditorName": "Lidl Dekuje Za Nakup",
+        "remittanceInformationUnstructuredArray": [
+          "Lidl Dekuje Za Nakup"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "19584.40",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "db925656f36aac06bd15c4a3405dd45e"
+      },
+      {
+        "transactionId": "6890e2e1-77ec-ab5c-b729-be87905ec75f",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-05",
+        "bookingDateTime": "2025-08-04T16:42:09.992069Z",
+        "valueDateTime": "2025-08-05T05:26:55.901463Z",
+        "transactionAmount": {
+          "amount": "-175.10",
+          "currency": "CZK"
+        },
+        "creditorName": "Tesco Praha Narodni",
+        "remittanceInformationUnstructuredArray": [
+          "Tesco Praha Narodni"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "16762.30",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "f02ad302b31f0737ff76a7077d79c8a6"
+      },
+      {
+        "transactionId": "6890dd2d-c754-af18-a17c-8082724ac2e0",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-05",
+        "bookingDateTime": "2025-08-04T16:17:49.150575Z",
+        "valueDateTime": "2025-08-05T02:39:14.748305Z",
+        "transactionAmount": {
+          "amount": "-350.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ugo Salaterie 5091",
+        "remittanceInformationUnstructuredArray": [
+          "Ugo Salaterie 5091"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "19938.87",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "3ad44cd24a768bb952b5aea490aaa36f"
+      },
+      {
+        "transactionId": "6890d657-9a27-a4f0-9178-ba07ca5aac0f",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-05",
+        "bookingDateTime": "2025-08-04T15:48:39.317462Z",
+        "valueDateTime": "2025-08-05T12:19:43.044963Z",
+        "transactionAmount": {
+          "amount": "-620.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Hookkaido",
+        "remittanceInformationUnstructuredArray": [
+          "Hookkaido"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "15862.50",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "82aa4d77e8fceccf04761da62e68d8a8"
+      },
+      {
+        "transactionId": "68906998-0374-a118-9c9d-aa04518eaf39",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-05",
+        "bookingDateTime": "2025-08-04T08:04:40.132098Z",
+        "valueDateTime": "2025-08-05T05:26:56.196599Z",
+        "transactionAmount": {
+          "amount": "-279.80",
+          "currency": "CZK"
+        },
+        "creditorName": "Tesco Praha Narodni",
+        "remittanceInformationUnstructuredArray": [
+          "Tesco Praha Narodni"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "16482.50",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "80b178b177a41298770b3f77f54a4143"
+      },
+      {
+        "transactionId": "68906226-4bb1-ac88-89d6-8dc9650e467f",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-05",
+        "bookingDateTime": "2025-08-04T07:32:54.627544Z",
+        "valueDateTime": "2025-08-05T02:39:19.029728Z",
+        "transactionAmount": {
+          "amount": "-95.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Truhlarna",
+        "remittanceInformationUnstructuredArray": [
+          "Truhlarna"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "19489.40",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "60d7bc6e4022c2531659ceb720f84bf3"
+      },
+      {
+        "transactionId": "68905e98-d890-ad91-bfdc-edafe5511a21",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-05",
+        "bookingDateTime": "2025-08-04T07:17:44.912314Z",
+        "valueDateTime": "2025-08-05T02:39:24.268647Z",
+        "transactionAmount": {
+          "amount": "-2552.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zakladni Fond Vzp",
+        "remittanceInformationUnstructuredArray": [
+          "Zakladni Fond Vzp"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "16937.40",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "5fef24d3e7a425842a0b1eb23dd5437d"
+      },
+      {
+        "transactionId": "6890568b-af95-a7e5-b996-fb8377786a86",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-04",
+        "bookingDateTime": "2025-08-04T06:43:23.656253Z",
+        "valueDateTime": "2025-08-04T16:51:44.143434Z",
+        "transactionAmount": {
+          "amount": "-68.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "20517.87",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "c972bcf263904bf3064e117da1ced96d"
+      },
+      {
+        "transactionId": "689053c5-5e3b-abca-98e5-40258a9f7037",
+        "bookingDate": "2025-08-04",
+        "valueDate": "2025-08-04",
+        "bookingDateTime": "2025-08-04T06:31:33.980945Z",
+        "valueDateTime": "2025-08-04T16:51:46.864319Z",
+        "transactionAmount": {
+          "amount": "-229.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "20288.87",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "6fa83900351f47d1d7305c0cebb5aff1"
+      },
+      {
+        "transactionId": "688f7df3-4597-a7a1-a7af-6e44d1370346",
+        "bookingDate": "2025-08-03",
+        "valueDate": "2025-08-04",
+        "bookingDateTime": "2025-08-03T15:19:15.861228Z",
+        "valueDateTime": "2025-08-04T02:27:48.367651Z",
+        "transactionAmount": {
+          "amount": "-76.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ovoce A Zelenina",
+        "remittanceInformationUnstructuredArray": [
+          "Ovoce A Zelenina"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "21291.67",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "94487b0a3150fcd894b9da404a0bd9ab"
+      },
+      {
+        "transactionId": "688f76ad-7d46-ab37-b9dc-fe99ec407c90",
+        "bookingDate": "2025-08-03",
+        "valueDate": "2025-08-04",
+        "bookingDateTime": "2025-08-03T14:48:13.002122Z",
+        "valueDateTime": "2025-08-04T02:27:52.203438Z",
+        "transactionAmount": {
+          "amount": "-82.80",
+          "currency": "CZK"
+        },
+        "creditorName": "Lidl Dekuje Za Nakup",
+        "remittanceInformationUnstructuredArray": [
+          "Lidl Dekuje Za Nakup"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "21208.87",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "5935fb4ec1689b3d19a59736d3bdfb47"
+      },
+      {
+        "transactionId": "688f6205-60a5-adfd-8d91-ac41d4c7eea7",
+        "bookingDate": "2025-08-03",
+        "valueDate": "2025-08-04",
+        "bookingDateTime": "2025-08-03T13:20:05.682833Z",
+        "valueDateTime": "2025-08-04T02:30:37.218610Z",
+        "transactionAmount": {
+          "amount": "-190.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Artic Bakehouse - Vodi",
+        "remittanceInformationUnstructuredArray": [
+          "Artic Bakehouse - Vodi"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "20585.87",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "b998a606a518a7ee33ccd518bc2d5183"
+      },
+      {
+        "transactionId": "688f5893-7aa8-a967-a80d-b0606fce6bbc",
+        "bookingDate": "2025-08-03",
+        "valueDate": "2025-08-04",
+        "bookingDateTime": "2025-08-03T12:39:47.298169Z",
+        "valueDateTime": "2025-08-04T02:27:56.897909Z",
+        "transactionAmount": {
+          "amount": "-179.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Langhans Kavarna Cvt",
+        "remittanceInformationUnstructuredArray": [
+          "Langhans Kavarna Cvt"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "20775.87",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "c38854f96b9cf8344802a431d7ce1761"
+      },
+      {
+        "transactionId": "688f49df-1fa4-a86c-904c-959a7a4504c9",
+        "bookingDate": "2025-08-03",
+        "valueDate": "2025-08-04",
+        "bookingDateTime": "2025-08-03T11:37:03.102517Z",
+        "valueDateTime": "2025-08-04T02:27:52.299797Z",
+        "transactionAmount": {
+          "amount": "-254.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ugo Salaterie 5048",
+        "remittanceInformationUnstructuredArray": [
+          "Ugo Salaterie 5048"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "20954.87",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "c9f378f198eaf56f15f9b0a50349230a"
+      },
+      {
+        "transactionId": "688e3e7d-9bd7-a3bc-bec2-8ea20c4f87cd",
+        "bookingDate": "2025-08-02",
+        "valueDate": "2025-08-04",
+        "bookingDateTime": "2025-08-02T16:36:13.017113Z",
+        "valueDateTime": "2025-08-04T01:26:34.769942Z",
+        "transactionAmount": {
+          "amount": "575.00",
+          "currency": "CZK"
+        },
+        "debtorName": "THE BORSCH",
+        "remittanceInformationUnstructuredArray": [
+          "Refund from The Borsch"
+        ],
+        "proprietaryBankTransactionCode": "CARD_REFUND",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "21367.67",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "55e0a59c73ddbb2837132d1bbd7f6242"
+      },
+      {
+        "transactionId": "688f774b-9326-a839-aaca-cc49e48e0d9a",
+        "bookingDate": "2025-08-03",
+        "valueDate": "2025-08-03",
+        "bookingDateTime": "2025-08-03T14:50:51.654720Z",
+        "valueDateTime": "2025-08-03T14:50:53.801378Z",
+        "transactionAmount": {
+          "amount": "-1510.47",
+          "currency": "CZK"
+        },
+        "remittanceInformationUnstructuredArray": [
+          "Yevheniia  Fyntynar",
+          ""
+        ],
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "22562.67",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "chargeAmount": {
+            "amount": "10.47",
+            "currency": "CZK"
+          }
+        },
+        "internalTransactionId": "75980846cded9900a08e8fa8607a570e"
+      },
+      {
+        "transactionId": "688f4d15-d688-ac20-965b-5f622483ae03",
+        "bookingDate": "2025-08-03",
+        "valueDate": "2025-08-03",
+        "bookingDateTime": "2025-08-03T11:50:45.494276Z",
+        "valueDateTime": "2025-08-03T17:10:38.358272Z",
+        "transactionAmount": {
+          "amount": "-948.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Alza.cz A.s.",
+        "remittanceInformationUnstructuredArray": [
+          "Alza.cz A.s."
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "20792.67",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "c9afdf14b5a28d2aefd94af7619c40f1"
+      },
+      {
+        "transactionId": "688f17c5-923b-a2fb-b9e6-36d38e282649",
+        "bookingDate": "2025-08-03",
+        "valueDate": "2025-08-03",
+        "bookingDateTime": "2025-08-03T08:03:17.620423Z",
+        "valueDateTime": "2025-08-03T17:09:09.888904Z",
+        "transactionAmount": {
+          "amount": "-109.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Nuselsky Pi",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Nuselsky Pi"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "21740.67",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "29f0661636963c4d3aa7052ab1c40b9d"
+      },
+      {
+        "transactionId": "688f163e-54fa-a478-97bb-efdc39c42e72",
+        "bookingDate": "2025-08-03",
+        "valueDate": "2025-08-03",
+        "bookingDateTime": "2025-08-03T07:56:46.968462Z",
+        "valueDateTime": "2025-08-03T17:09:09.684561Z",
+        "transactionAmount": {
+          "amount": "-713.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Botticelli",
+        "remittanceInformationUnstructuredArray": [
+          "Botticelli"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "21849.67",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "56e05902935cad2b25395efb3e636f1c"
+      },
+      {
+        "transactionId": "688e4000-2af6-a022-87fa-b07abd375a65",
+        "bookingDate": "2025-08-02",
+        "valueDate": "2025-08-03",
+        "bookingDateTime": "2025-08-02T16:42:40.022557Z",
+        "valueDateTime": "2025-08-03T12:07:05.236455Z",
+        "transactionAmount": {
+          "amount": "-367.30",
+          "currency": "CZK"
+        },
+        "creditorName": "Tesco Praha Novy Smich",
+        "remittanceInformationUnstructuredArray": [
+          "Tesco Praha Novy Smich"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "24568.14",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "cc56eb030ffeff9ef1262b0edc328f6e"
+      },
+      {
+        "transactionId": "688e3610-8f77-a685-8155-50f86e7642a2",
+        "bookingDate": "2025-08-02",
+        "valueDate": "2025-08-03",
+        "bookingDateTime": "2025-08-02T16:00:16.797723Z",
+        "valueDateTime": "2025-08-03T01:10:10.352903Z",
+        "transactionAmount": {
+          "amount": "-575.00",
+          "currency": "CZK"
+        },
+        "creditorName": "The Borsch",
+        "remittanceInformationUnstructuredArray": [
+          "The Borsch"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "25522.54",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "9b6e16d9a94cf27e6202117e453eadce"
+      },
+      {
+        "transactionId": "688dc4d7-659f-a55f-a9da-a49d23918a6d",
+        "bookingDate": "2025-08-02",
+        "valueDate": "2025-08-03",
+        "bookingDateTime": "2025-08-02T07:57:11.922133Z",
+        "valueDateTime": "2025-08-03T06:01:06.271371Z",
+        "transactionAmount": {
+          "amount": "-587.10",
+          "currency": "CZK"
+        },
+        "creditorName": "Lidl Dekuje Za Nakup",
+        "remittanceInformationUnstructuredArray": [
+          "Lidl Dekuje Za Nakup"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "24935.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "cb51ed23f23a07f50f9b4d6df8be1a22"
+      },
+      {
+        "transactionId": "688db6c4-0043-ac6f-8736-4ad732a67d2b",
+        "bookingDate": "2025-08-02",
+        "valueDate": "2025-08-03",
+        "bookingDateTime": "2025-08-02T06:57:08.844114Z",
+        "valueDateTime": "2025-08-03T12:07:11.059876Z",
+        "transactionAmount": {
+          "amount": "-405.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Tisse Nuselska",
+        "remittanceInformationUnstructuredArray": [
+          "Tisse Nuselska"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "24163.14",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "fd93e3ad7ae532e31dcdf83e591edac7"
+      },
+      {
+        "transactionId": "688cc0b2-bd8a-a5ca-9e7f-1a6933996c3e",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-03",
+        "bookingDateTime": "2025-08-01T13:27:14.404190Z",
+        "valueDateTime": "2025-08-03T12:17:26.867109Z",
+        "transactionAmount": {
+          "amount": "-90.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Xkafe, S.r.o.",
+        "remittanceInformationUnstructuredArray": [
+          "Xkafe, S.r.o."
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "24073.14",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "006d46437a250b5bdf08855eb6933314"
+      },
+      {
+        "transactionId": "688d03aa-2ef3-a415-839e-f0282067a08d",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-02",
+        "bookingDateTime": "2025-08-01T18:12:58.397481Z",
+        "valueDateTime": "2025-08-02T11:24:03.679510Z",
+        "transactionAmount": {
+          "amount": "-1200.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Chateau Safarikova",
+        "remittanceInformationUnstructuredArray": [
+          "Chateau Safarikova"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "27832.54",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "8bce1a06611d98406aa50eb420fdddaa"
+      },
+      {
+        "transactionId": "688ccba3-6335-a1bc-b6fd-216f548d9c2b",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-02",
+        "bookingDateTime": "2025-08-01T14:13:55.039608Z",
+        "valueDateTime": "2025-08-02T03:10:08.054294Z",
+        "transactionAmount": {
+          "amount": "-213.33",
+          "currency": "CZK"
+        },
+        "currencyExchange": {
+          "instructedAmount": {
+            "amount": "213.33",
+            "currency": "CZK"
+          },
+          "sourceCurrency": "CZK",
+          "exchangeRate": "0.0468768043664324",
+          "unitCurrency": "CZK",
+          "targetCurrency": "USD"
+        },
+        "creditorName": "Github, Inc.",
+        "remittanceInformationUnstructuredArray": [
+          "Github, Inc."
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "29479.44",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "063af04643e1c3320f881a947cebd637"
+      },
+      {
+        "transactionId": "688cc511-6189-aa78-8e83-c874ad869635",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-02",
+        "bookingDateTime": "2025-08-01T13:45:53.462850Z",
+        "valueDateTime": "2025-08-02T11:28:46.782367Z",
+        "transactionAmount": {
+          "amount": "-95.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Vnitroblock",
+        "remittanceInformationUnstructuredArray": [
+          "Vnitroblock"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "27737.54",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "857dabebce1e8e89e5abb5add93852a7"
+      },
+      {
+        "transactionId": "688cbf1b-ebb2-a780-9bf8-702c36afd63b",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-02",
+        "bookingDateTime": "2025-08-01T13:20:27.957051Z",
+        "valueDateTime": "2025-08-02T05:15:15.055255Z",
+        "transactionAmount": {
+          "amount": "-18.90",
+          "currency": "CZK"
+        },
+        "creditorName": "Albert Vam Dekuje",
+        "remittanceInformationUnstructuredArray": [
+          "Albert Vam Dekuje"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "29460.54",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "5ff3990f5184469362bb9b5fd22567e0"
+      },
+      {
+        "transactionId": "688cbd4f-d2aa-a89a-b4c6-fe5da59363dd",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-02",
+        "bookingDateTime": "2025-08-01T13:12:47.496550Z",
+        "valueDateTime": "2025-08-02T12:54:11.543296Z",
+        "transactionAmount": {
+          "amount": "-990.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Megapixel Sro",
+        "remittanceInformationUnstructuredArray": [
+          "Megapixel Sro"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "26097.54",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "eb9cb1624dfa74333fbbdf2fbe376c20"
+      },
+      {
+        "transactionId": "688cb1ee-62e4-ae16-b6ad-dce1fbd93fb3",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-02",
+        "bookingDateTime": "2025-08-01T12:24:14.501580Z",
+        "valueDateTime": "2025-08-02T05:15:21.094928Z",
+        "transactionAmount": {
+          "amount": "-205.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ugo Salaterie 5043",
+        "remittanceInformationUnstructuredArray": [
+          "Ugo Salaterie 5043"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "29032.54",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "549013075eb8c75fb0890ee59a2514c0"
+      },
+      {
+        "transactionId": "688c6916-5331-ad3a-ae6e-e11bf267ef31",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-02",
+        "bookingDateTime": "2025-08-01T07:13:26.958585Z",
+        "valueDateTime": "2025-08-02T05:15:18.829836Z",
+        "transactionAmount": {
+          "amount": "-223.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Truhlarna",
+        "remittanceInformationUnstructuredArray": [
+          "Truhlarna"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "29237.54",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "83940f120d737629ebdcae017e93c11e"
+      },
+      {
+        "transactionId": "688b9350-da94-a7d6-b781-a2e46cd2d14f",
+        "bookingDate": "2025-07-31",
+        "valueDate": "2025-08-02",
+        "bookingDateTime": "2025-07-31T16:01:20.578927Z",
+        "valueDateTime": "2025-08-02T12:54:06.281502Z",
+        "transactionAmount": {
+          "amount": "-650.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Myata Lounge",
+        "remittanceInformationUnstructuredArray": [
+          "Myata Lounge"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "27087.54",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "8ee4dafc5ed006dec8fa335ee93fe377"
+      },
+      {
+        "transactionId": "688ccd42-ae36-a218-b9ca-ba14498e4e98",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-01",
+        "bookingDateTime": "2025-08-01T14:20:50.695498Z",
+        "valueDateTime": "2025-08-01T14:20:50.696207Z",
+        "transactionAmount": {
+          "amount": "22022.74",
+          "currency": "CZK"
+        },
+        "currencyExchange": {
+          "instructedAmount": {
+            "amount": "22022.74",
+            "currency": "CZK"
+          },
+          "sourceCurrency": "PLN",
+          "exchangeRate": "5.7223787731041398",
+          "unitCurrency": "PLN",
+          "targetCurrency": "CZK"
+        },
+        "remittanceInformationUnstructuredArray": [
+          "Exchanged to CZK"
+        ],
+        "proprietaryBankTransactionCode": "EXCHANGE",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "30106.77",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "internalTransactionId": "30ca0da0c873a1efbfc0ca562d66b945"
+      },
+      {
+        "transactionId": "688ccb60-161a-ad84-b58d-b05130cd166a",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-01",
+        "bookingDateTime": "2025-08-01T14:12:48.512211Z",
+        "valueDateTime": "2025-08-01T14:12:48.513286Z",
+        "transactionAmount": {
+          "amount": "-0.00",
+          "currency": "CZK"
+        },
+        "currencyExchange": {
+          "instructedAmount": {
+            "amount": "0.00",
+            "currency": "CZK"
+          },
+          "sourceCurrency": "CZK",
+          "exchangeRate": "0.046940482420332",
+          "unitCurrency": "CZK",
+          "targetCurrency": "USD"
+        },
+        "creditorName": "Github, Inc.",
+        "remittanceInformationUnstructuredArray": [
+          "Github, Inc."
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "8084.03",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "0b57aa5270953daf2ce5edfac704454f"
+      },
+      {
+        "transactionId": "688cbbfa-84ab-a098-811a-63b0480e58a0",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-01",
+        "bookingDateTime": "2025-08-01T13:07:06.408471Z",
+        "valueDateTime": "2025-08-01T13:07:06.408969Z",
+        "transactionAmount": {
+          "amount": "5734.19",
+          "currency": "CZK"
+        },
+        "currencyExchange": {
+          "instructedAmount": {
+            "amount": "5734.19",
+            "currency": "CZK"
+          },
+          "sourceCurrency": "PLN",
+          "exchangeRate": "5.7341901553421468",
+          "unitCurrency": "PLN",
+          "targetCurrency": "CZK"
+        },
+        "remittanceInformationUnstructuredArray": [
+          "Exchanged to CZK"
+        ],
+        "proprietaryBankTransactionCode": "EXCHANGE",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "8084.03",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "internalTransactionId": "1d0a425c844f3b11083491a51de749b1"
+      },
+      {
+        "transactionId": "688c5f48-e428-a359-be57-b2c17da97a1b",
+        "bookingDate": "2025-08-01",
+        "valueDate": "2025-08-01",
+        "bookingDateTime": "2025-08-01T06:31:36.845623Z",
+        "valueDateTime": "2025-08-01T15:18:06.721006Z",
+        "transactionAmount": {
+          "amount": "-414.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Zrno Zrnko Tylak",
+        "remittanceInformationUnstructuredArray": [
+          "Zrno Zrnko Tylak"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "29692.77",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "f4ae18f72993383e27245e8f46f86369"
+      },
+      {
+        "transactionId": "688b7840-240a-a58f-93d7-9eab1ac3b86a",
+        "bookingDate": "2025-07-31",
+        "valueDate": "2025-08-01",
+        "bookingDateTime": "2025-07-31T14:05:52.020807Z",
+        "valueDateTime": "2025-08-01T11:57:51.151926Z",
+        "transactionAmount": {
+          "amount": "-778.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Gopay  *bombasleva.cz",
+        "remittanceInformationUnstructuredArray": [
+          "Gopay *bombasleva.cz"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "2349.84",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "46ead5678db7d7edaa99c2723a3bf7a1"
+      },
+      {
+        "transactionId": "688b758b-0a48-a0ea-87a0-bc862953d320",
+        "bookingDate": "2025-07-31",
+        "valueDate": "2025-08-01",
+        "bookingDateTime": "2025-07-31T13:54:19.136992Z",
+        "valueDateTime": "2025-08-01T02:37:30.329526Z",
+        "transactionAmount": {
+          "amount": "-19818.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Alza.cz A.s.",
+        "remittanceInformationUnstructuredArray": [
+          "Alza.cz A.s."
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "3127.84",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "b37d6d7fd9f88fa11e547615156bf814"
+      },
+      {
+        "transactionId": "688b73d9-d403-afea-9e97-1da45d18a66a",
+        "bookingDate": "2025-07-31",
+        "valueDate": "2025-07-31",
+        "bookingDateTime": "2025-07-31T13:47:05.532419Z",
+        "valueDateTime": "2025-07-31T13:47:05.533169Z",
+        "transactionAmount": {
+          "amount": "22919.98",
+          "currency": "CZK"
+        },
+        "currencyExchange": {
+          "instructedAmount": {
+            "amount": "22919.98",
+            "currency": "CZK"
+          },
+          "sourceCurrency": "PLN",
+          "exchangeRate": "5.7299970315499948",
+          "unitCurrency": "PLN",
+          "targetCurrency": "CZK"
+        },
+        "remittanceInformationUnstructuredArray": [
+          "Exchanged to CZK"
+        ],
+        "proprietaryBankTransactionCode": "EXCHANGE",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "22945.84",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "internalTransactionId": "b47fcea539b64040e8e2e1119f2e3595"
+      },
+      {
+        "transactionId": "68823da1-819a-a61e-b969-df263b115168",
+        "bookingDate": "2025-07-24",
+        "valueDate": "2025-07-25",
+        "bookingDateTime": "2025-07-24T14:05:21.278138Z",
+        "valueDateTime": "2025-07-25T02:30:15.684886Z",
+        "transactionAmount": {
+          "amount": "-185.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Ugo Salaterie 5091",
+        "remittanceInformationUnstructuredArray": [
+          "Ugo Salaterie 5091"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "25.86",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "e7b8b29af892baae7b01c50d09d4e55b"
+      },
+      {
+        "transactionId": "687fd5f2-3ef9-aa2c-b898-84662701e258",
+        "bookingDate": "2025-07-22",
+        "valueDate": "2025-07-24",
+        "bookingDateTime": "2025-07-22T18:18:26.326752Z",
+        "valueDateTime": "2025-07-24T05:17:51.331492Z",
+        "transactionAmount": {
+          "amount": "-170.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Cinema City Slovansk",
+        "remittanceInformationUnstructuredArray": [
+          "Cinema City Slovansk"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "balanceAfterTransaction": {
+          "balanceAmount": {
+            "amount": "210.86",
+            "currency": "CZK"
+          },
+          "balanceType": "InterimBooked"
+        },
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        },
+        "internalTransactionId": "17a6923d384ea2e019c0785874c5e693"
+      }
+    ],
+    "pending": [
+      {
+        "transactionId": "68a81d06-b81a-afbd-ac2c-0e631218ee12",
+        "bookingDate": "2025-08-22",
+        "bookingDateTime": "2025-08-22T07:32:22.104134Z",
+        "transactionAmount": {
+          "amount": "-49.00",
+          "currency": "CZK"
+        },
+        "creditorName": "Burger King",
+        "remittanceInformationUnstructuredArray": [
+          "Burger King"
+        ],
+        "proprietaryBankTransactionCode": "CARD_PAYMENT",
+        "additionalDataStructured": {
+          "cardInstrument": {
+            "cardSchemeName": "MASTERCARD",
+            "name": "ANDRII ZHYVOV",
+            "identification": "6081"
+          }
+        }
+      }
+    ]
+  },
+  "last_updated": "2025-08-22T17:07:10.040224Z"
+}

@@ -2,7 +2,7 @@ import styled from "styled-components"
 import MoneyList from "../../../../MoneyList/MoneyList"
 import DateList from "../../../../Menu/DateList"
 import { useRef, useState } from "react"
-import { useNavigate } from "react-router"
+import { useNavigate } from "react-router-dom"
 import { LINK_ROUTES } from "../../../../../enums/routes"
 
 export default function CashFlow() {
@@ -104,6 +104,7 @@ const DateListWrapper = styled.div`
     grid-area: datelist;
     width: 100%;
 `
+
 
 const TransactionWrapper = styled.div`
     overflow-y: scroll;
