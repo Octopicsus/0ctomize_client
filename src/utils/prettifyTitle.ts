@@ -15,7 +15,9 @@ const CHAIN_RULES: { pattern: RegExp; name: string }[] = [
   { pattern: /zrno\s*zrnko/i, name: 'Zrno Zrnko' },
   { pattern: /ugo.*salaterie/i, name: 'Ugo Salaterie' },
   { pattern: /tisse/i, name: 'Tisse' },
-  { pattern: /tesco/i, name: 'Tesco' },
+  // Important: place 'Tescoma' before 'Tesco' and use word boundary for Tesco so 'Tescoma' is not reduced to 'Tesco'
+  { pattern: /tescoma/i, name: 'Tescoma' },
+  { pattern: /\btesco\b/i, name: 'Tesco' },
   { pattern: /foodora/i, name: 'Foodora' },
   { pattern: /teta/i, name: 'Teta' },
   { pattern: /\bdm\b/i, name: 'DM' },

@@ -166,6 +166,23 @@ export const updateTransaction = createAsyncThunk(
     }
 );
 
+export const applyCategoryBulk = createAsyncThunk(
+    'moneyHistory/applyCategoryBulk',
+    async ({ baseId, category, scope, createUserPattern, color, img }: { baseId: string; category: string; scope: 'one' | 'similar'; createUserPattern?: boolean; color?: string; img?: string }, { getState, rejectWithValue, dispatch }) => {
+        try {
+            const state = getState() as RootState;
+            const token = state.auth.accessToken;
+            if (!token) throw new Error('No authentication token');
+            const result = await transactionsAPI.applyCategory(token, baseId, { category, scope, createUserPattern, color, img });
+            // После массового обновления — обновим список (минимально можно было бы локально применить)
+            await dispatch(forceRefreshTransactions());
+            return result;
+        } catch (e: any) {
+            return rejectWithValue(e.message);
+        }
+    }
+);
+
 export const deleteTransaction = createAsyncThunk(
     'moneyHistory/deleteTransaction',
     async ({ transactionId, itemId }: { transactionId: string, itemId: number }, { getState, rejectWithValue }) => {
@@ -268,6 +285,10 @@ const moneyHisorySlice = createSlice({
                 state.loading = false;
                 state.error = action.payload as string;
             });
+        builder
+            .addCase(applyCategoryBulk.pending, (state) => { state.loading = true; state.error = null; })
+            .addCase(applyCategoryBulk.fulfilled, (state) => { state.loading = false; })
+            .addCase(applyCategoryBulk.rejected, (state, action) => { state.loading = false; state.error = action.payload as string; });
 
         builder
             .addCase(deleteTransaction.pending, (state) => {
@@ -311,3 +332,8 @@ const moneyHisorySlice = createSlice({
 
 export const { clearError, clearTransactions, hydrateTransactions } = moneyHisorySlice.actions
 export default moneyHisorySlice.reducer
+
+// Reusable memoized selectors
+const baseSelectors = moneyAdapter.getSelectors<RootState>((state) => state.moneyHistory)
+export const selectAllTransactions = baseSelectors.selectAll
+export const selectTransactionsLoaded = (state: RootState) => baseSelectors.selectTotal(state) > 0

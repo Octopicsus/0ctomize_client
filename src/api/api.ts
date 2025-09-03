@@ -22,6 +22,9 @@ export interface AuthResponse {
     id: string;
     email: string;
     createdAt?: string;
+  name?: string;
+  picture?: string;
+  authProvider?: string;
   };
 }
 
@@ -198,6 +201,28 @@ export const transactionsAPI = {
 
     return response.json();
   },
+  getSimilarById: async (token: string, transactionId: string) => {
+    const response = await fetch(`${API_ENDPOINTS.TRANSACTIONS}/similar/by-key/${transactionId}`, {
+      method: 'GET',
+      headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' }
+    });
+    if (!response.ok) {
+      throw new Error('Failed to fetch similar transactions');
+    }
+    return response.json();
+  },
+  applyCategory: async (token: string, transactionId: string, payload: { category: string; scope: 'one' | 'similar'; createUserPattern?: boolean; color?: string; img?: string }) => {
+    const response = await fetch(`${API_ENDPOINTS.TRANSACTIONS}/${transactionId}/category-apply`, {
+      method: 'POST',
+      headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if (!response.ok) {
+      const err = await response.json().catch(()=>({ message:'fail'}));
+      throw new Error(err.message || 'Failed to apply category');
+    }
+    return response.json();
+  }
 };
 
 export interface CustomCategory {

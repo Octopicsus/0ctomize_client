@@ -6,6 +6,7 @@ export interface UserProfile {
   name?: string
   picture?: string
   createdAt?: string
+  authProvider?: string
 }
 
 export interface SessionStorageData {

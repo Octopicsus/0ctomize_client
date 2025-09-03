@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { moneyAdapter, MoneyItem } from "../../store/features/moneyHistorySlice"
 import { RootState } from "../../store/store"
 import MoneyActionItem from "./MoneyActionItem"
+import categoriesData from '../../../public/data/categories.json'
 import styled from "styled-components"
 import { setSelectedMoneyItemId } from "../../store/features/selectedMoneyActionSlice"
 import { useNavigate } from "react-router-dom"
@@ -185,7 +186,14 @@ const MoneyList = forwardRef<any, Props>(({ onVisibleMonthChange }, ref) => {
               </AmountGroup>
             </SubWrapper>
 
-            {actions.map((moneyAction: MoneyItem, index) => (
+            {actions.map((moneyAction: MoneyItem, index) => {
+              const catTitle = moneyAction.category || '';
+              const catPool: any[] = catTitle && (moneyAction.type === 'Income' ? (categoriesData as any).income : (categoriesData as any).expense);
+              const catMeta = catPool ? catPool.find(c => c.title === catTitle) : null;
+              // Always derive presentation color/img from categories.json (ignore stored transaction color/img)
+              const iconImg = catMeta?.img || '/img/taxes_category.svg';
+              const iconColor = catMeta?.color || '#555a60';
+              return (
               <List key={moneyAction.id}
                 onClick={() => {
                   dispatch(setSelectedMoneyItemId(moneyAction.id || 0))
@@ -198,8 +206,8 @@ const MoneyList = forwardRef<any, Props>(({ onVisibleMonthChange }, ref) => {
                     amount={moneyAction.amount}
                     date={moneyAction.date}
                     time={moneyAction.time}
-                    img={'/img/taxes_category.svg'}
-                    color={moneyAction.color}
+                    img={iconImg}
+                    color={iconColor}
                     type={moneyAction.type}
                     category={moneyAction.category as any}
                     categoryConfidence={moneyAction.categoryConfidence as any}
@@ -208,7 +216,7 @@ const MoneyList = forwardRef<any, Props>(({ onVisibleMonthChange }, ref) => {
                   />
                 </ItemClickable>
               </List>
-            ))}
+            )})}
           </DateGroup>
         ))}
       </ListWrapper>

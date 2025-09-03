@@ -1,5 +1,5 @@
 import { Route, Routes, useNavigate, useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { LINK_ROUTES } from './enums/routes'
 import styled from 'styled-components'
@@ -22,7 +22,6 @@ import Sidebar from './widgets/Menu/Sidebar/Sidebar'
 import Dashboard from './widgets/Pages/ActionPages/Dashboard/Dashboard'
 import Transaction from './widgets/Pages/ActionPages/TransactionPage/Transaction'
 import BankPage from './widgets/Pages/ActionPages/Bank/BankPage'
-import SyncStatusModal from './widgets/BankSync/SyncStatusModal'
 
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
   const location = useLocation()
   const dispatch = useDispatch<AppDispatch>()
   const { isAuthenticated, accessToken, isLoading, user } = useSelector((state: RootState) => state.auth)
-  const [showSyncModal, setShowSyncModal] = useState(false)
 
   useEffect(() => {
     console.log('App - состояние аутентификации:')
@@ -93,9 +91,7 @@ function App() {
       ) : (
         <AppContainer>
           <HeaderBlock />
-          <SyncButtonWrapper>
-            <SyncBtn onClick={() => setShowSyncModal(true)}>Bank Sync</SyncBtn>
-          </SyncButtonWrapper>
+          {/* Bank Sync button removed */}
           <Sidebar />
           {!isActionPage && (
             <>
@@ -157,7 +153,6 @@ function App() {
           </Routes>
         </AppContainer>
       )}
-  {showSyncModal && <SyncStatusModal onClose={() => setShowSyncModal(false)} />}
     </div>
   )
 }
@@ -169,25 +164,6 @@ const AppContainer = styled.div`
   text-align: center;
   padding-top: 60px; 
   padding-left: 60px; 
-`
-
-const SyncButtonWrapper = styled.div`
-  position: fixed;
-  top: 10px;
-  right: 14px;
-  z-index: 1500;
-`
-
-const SyncBtn = styled.button`
-  background: #252525;
-  color: #ddd;
-  border: 1px solid #333;
-  border-radius: 6px;
-  padding: 6px 10px;
-  font-size: 12px;
-  cursor: pointer;
-  letter-spacing: 0.5px;
-  &:hover { background: #303030; }
 `
 
 export default App

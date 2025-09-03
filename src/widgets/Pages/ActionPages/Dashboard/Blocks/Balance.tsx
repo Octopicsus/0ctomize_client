@@ -1,10 +1,9 @@
 import styled from "styled-components"
 import colors from "../../../../../ui/colorsPalette"
 import { useSelector, useDispatch } from "react-redux"
-import { useState } from "react"
-import { RootState } from "../../../../../store/store"
+import { useState, useMemo } from "react"
 import { getBalance, getIncome, getExpense, formatAmount } from "../../../../../utils/balanceCalc"
-import { moneyAdapter } from "../../../../../store/features/moneyHistorySlice"
+import { selectAllTransactions } from "../../../../../store/features/moneyHistorySlice"
 import { setCategory } from "../../../../../store/features/categorySlice"
 import { CATEGORY } from "../../../../../enums/categoryTitles"
 
@@ -12,7 +11,7 @@ import { CATEGORY } from "../../../../../enums/categoryTitles"
 export default function Balance() {
     const dispatch = useDispatch()
     const [period, setPeriod] = useState<'month' | 'year'>('month')
-    const allTransactions = useSelector((state: RootState) => moneyAdapter.getSelectors().selectAll(state.moneyHistory))
+    const allTransactions = useSelector(selectAllTransactions)
 
     const filterTransactionsByPeriod = (transactions: any[], period: 'month' | 'year') => {
         const now = new Date()
@@ -66,11 +65,10 @@ export default function Balance() {
         return lastWorkingDay
     }
 
-    const transactions = filterTransactionsByPeriod(allTransactions, period)
-
-    const totalBalance = getBalance(allTransactions)
-    const totalIncome = getIncome(transactions)
-    const totalExpense = getExpense(transactions)
+    const transactions = useMemo(() => filterTransactionsByPeriod(allTransactions, period), [allTransactions, period])
+    const totalBalance = useMemo(() => getBalance(allTransactions), [allTransactions])
+    const totalIncome = useMemo(() => getIncome(transactions), [transactions])
+    const totalExpense = useMemo(() => getExpense(transactions), [transactions])
 
     const difference = Math.abs(totalIncome - totalExpense)
     const maxAmount = Math.max(totalIncome, totalExpense)

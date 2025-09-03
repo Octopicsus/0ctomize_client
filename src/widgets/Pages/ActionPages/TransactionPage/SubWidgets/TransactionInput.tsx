@@ -5,7 +5,8 @@ import { LINK_ROUTES } from "../../../../../enums/routes"
 import { useState, useRef, useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { RootState, AppDispatch } from "../../../../../store/store"
-import { moneyAdapter, createTransaction, updateTransaction, fetchTransactions } from "../../../../../store/features/moneyHistorySlice"
+import { moneyAdapter, createTransaction, updateTransaction, fetchTransactions, applyCategoryBulk, deleteTransaction } from "../../../../../store/features/moneyHistorySlice"
+import { transactionsAPI } from "../../../../../api/api";
 import { getBalance } from "../../../../../utils/balanceCalc"
 import * as yup from 'yup'
 
@@ -14,7 +15,6 @@ export default function TransactionInput() {
     const navigate = useNavigate()
     const location = useLocation()
     const editItem = location.state?.item
-    const isBank = !!editItem?.source && editItem.source === 'bank'
     const dispatch = useDispatch<AppDispatch>()
     const hiddenDateInput = useRef<HTMLInputElement>(null)
     const [currencyData, setCurrencyData] = useState<any[]>([])
@@ -25,12 +25,20 @@ export default function TransactionInput() {
     )
     // For imported bank tx: title = merchant, category stored separately (possibly undefined for manual historic entries)
     const [selectedCategory, setSelectedCategory] = useState<string>(editItem ? (editItem.category || (editItem.type ? editItem.title : '')) : '')
-    const [selectedCategoryColor, setSelectedCategoryColor] = useState<string>(editItem ? editItem.color : '')
+    // Always derive color from categories.json (transaction stored color may be outdated or empty)
+    const [selectedCategoryColor, setSelectedCategoryColor] = useState<string>('')
     const [transactionValue, setTransactionValue] = useState<string>(editItem ? String(editItem.amount) : '')
     // Display merchant/title for bank, otherwise existing description (user text)
-    const [transactionTitle, setTransactionTitle] = useState<string>(editItem ? (isBank ? editItem.title : editItem.description) : '')
-    const [transactionDescription, setTransactionDescription] = useState<string>(editItem ? (editItem.notes || '') : '')
+    // For manual transactions previously брали description вместо title — исправлено: всегда используем title.
+    const [transactionTitle, setTransactionTitle] = useState<string>(editItem ? editItem.title : '')
+    // Description при редактировании: приоритет notes, затем description
+    const [transactionDescription, setTransactionDescription] = useState<string>(editItem ? (editItem.notes || editItem.description || '') : '')
     const [isInputFocused, setIsInputFocused] = useState<boolean>(false)
+    const [showBulkModal, setShowBulkModal] = useState(false)
+    const [similarCount, setSimilarCount] = useState<number>(0)
+    const [pendingCategory, setPendingCategory] = useState<string | null>(null)
+    const [manualCategoryTouched, setManualCategoryTouched] = useState(false)
+    const accessToken = useSelector((state: RootState) => state.auth.accessToken)
 
     const selectAll = moneyAdapter.getSelectors(
         (state: RootState) => state.moneyHistory
@@ -66,6 +74,18 @@ export default function TransactionInput() {
         }
         loadCategories()
     }, [])
+
+    // When editing an existing transaction, sync category color with canonical palette once categories are loaded
+    useEffect(() => {
+        if (!editItem) return
+        if (!selectedCategory) return
+        if (!expenseCategories.length && !incomeCategories.length) return
+        const pool = [...expenseCategories, ...incomeCategories]
+        const meta = pool.find(c => c.title === selectedCategory)
+        if (meta && meta.color && meta.color !== selectedCategoryColor) {
+            setSelectedCategoryColor(meta.color)
+        }
+    }, [editItem, selectedCategory, expenseCategories, incomeCategories])
 
     const currentCurrency = currencyData.find(curr => curr.code === currentCurrencyCode)
     const currencySign = currentCurrency ? currentCurrency.sign : "Kč"
@@ -112,10 +132,52 @@ export default function TransactionInput() {
         }
     }
 
-    const handleCategorySelect = (categoryTitle: string, categoryColor: string) => {
+    const handleCategorySelect = async (categoryTitle: string, categoryColor: string) => {
+        setManualCategoryTouched(true)
         setSelectedCategory(categoryTitle)
         setSelectedCategoryColor(categoryColor)
+        if (editItem && editItem._id && accessToken && categoryTitle !== editItem.category) {
+            try {
+                const similar = await transactionsAPI.getSimilarById(accessToken, editItem._id)
+                if (similar.total > 1) {
+                    setSimilarCount(similar.total)
+                    setPendingCategory(categoryTitle)
+                    setShowBulkModal(true)
+                }
+            } catch (e) {
+                // silent
+            }
+        }
     }
+
+    // Auto-suggest category for NEW manual transaction (no editItem) when title changes debounce
+    useEffect(() => {
+        if (editItem) return; // только для новых
+        if (manualCategoryTouched) return; // не переопределяем ручной выбор
+        const title = transactionTitle.trim();
+        if (!title || !accessToken) return;
+        if (!expenseCategories.length && !incomeCategories.length) return; // подождём загрузку
+        const baseUrl = (import.meta.env.VITE_API_URL || 'http://localhost:3001').replace(/\/+$/,'');
+        const h = setTimeout(async () => {
+            try {
+                const resp = await fetch(`${baseUrl}/api/transactions/suggest?title=${encodeURIComponent(title)}`, { headers: { 'Authorization': `Bearer ${accessToken}` } });
+                if (!resp.ok) return;
+                const data = await resp.json();
+                if (data.found && data.category && !selectedCategory) {
+                    const pool = [...expenseCategories, ...incomeCategories];
+                    const catMeta = pool.find(c => c.title === data.category);
+                    if (catMeta) {
+                        setSelectedCategory(catMeta.title);
+                        setSelectedCategoryColor(catMeta.color);
+                        if (selectedTransactionType === 'income' && catMeta.type !== 'Income') {
+                            setSelectedTransactionType('expense');
+                        }
+                    }
+                }
+            } catch {}
+        }, 400);
+        return () => clearTimeout(h);
+    }, [transactionTitle, accessToken, editItem, selectedCategory, manualCategoryTouched, expenseCategories, incomeCategories, selectedTransactionType]);
 
     const handleCategorySelectorClick = () => {
         if (selectedCategory) {
@@ -255,8 +317,34 @@ export default function TransactionInput() {
         }
     }
 
+    const handleDelete = () => {
+        if (!editItem?._id) return
+        const confirmed = window.confirm('Delete this transaction?')
+        if (!confirmed) return
+        const numericId = editItem.id || (parseInt(editItem._id, 16) % 1000000)
+        dispatch(deleteTransaction({ transactionId: editItem._id, itemId: numericId }))
+        setTimeout(() => navigate(LINK_ROUTES.DASHBOARD), 200)
+    }
+
     return (
         <Wrapper>
+            {showBulkModal && pendingCategory && (
+                <BulkModalWrapper>
+                    <BulkModal>
+                        <BulkTitle>Apply "{pendingCategory}" to {similarCount} similar transactions?</BulkTitle>
+                        <BulkActions>
+                            <button onClick={() => { setShowBulkModal(false); setPendingCategory(null); }}>Only this</button>
+                            <button onClick={() => {
+                                if (editItem && pendingCategory) {
+                                    const catMeta = currentCategories.find(c => c.title === pendingCategory)
+                                    dispatch(applyCategoryBulk({ baseId: editItem._id, category: pendingCategory, scope: 'similar', createUserPattern: true, color: catMeta?.color, img: catMeta?.img }))
+                                }
+                                setShowBulkModal(false); setPendingCategory(null);
+                            }}>All {similarCount}</button>
+                        </BulkActions>
+                    </BulkModal>
+                </BulkModalWrapper>
+            )}
             <TransactionHeader 
                 title="Transaction" 
                 initialType={selectedTransactionType}
@@ -368,6 +456,9 @@ export default function TransactionInput() {
                     >
                         Cancel
                     </CancelButton>
+                    {editItem && (
+                        <DeleteButton type="button" onClick={handleDelete}>Delete</DeleteButton>
+                    )}
                     <AddButton
                         type="button"
                         onClick={handleAdd}
@@ -453,6 +544,20 @@ const AddButton = styled.button<{ disabled?: boolean }>`
     background-color: ${props => props.disabled ? '#1a1a1a' : '#e6a500'};
     color: ${props => props.disabled ? '#444' : 'white'};
   }
+`
+
+const DeleteButton = styled.button`
+    flex: 1;
+    padding: 6px 10px;
+    background-color: #3b1f1f;
+    border: 1px solid #633;
+    color: #d07777;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    &:hover { background:#b83434; color:#fff; border-color:#b83434; }
 `
 
 const WalletWrapper = styled.div`
@@ -743,4 +848,50 @@ const TagsSelector = styled.div`
 text-align: left;
 padding: 10px;
 margin-top: 10px;
+`
+
+const BulkModalWrapper = styled.div`
+    position: fixed;
+    top: 0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+`
+
+const BulkModal = styled.div`
+    background: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+    font-family: inherit;
+`
+
+const BulkTitle = styled.h4`
+    margin: 0 0 14px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ddd;
+    line-height: 1.3;
+`
+
+const BulkActions = styled.div`
+    display: flex;
+    gap: 10px;
+    & > button {
+        flex: 1;
+        background: #333;
+        border: 1px solid #555;
+        color: #bbb;
+        border-radius: 8px;
+        padding: 8px 10px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all .18s;
+    }
+    & > button:hover { background:#e6a500; color:#fff; border-color:#e6a500; }
 `

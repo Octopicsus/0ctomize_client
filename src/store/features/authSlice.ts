@@ -9,6 +9,7 @@ interface User {
   name?: string;
   picture?: string;
   createdAt?: string;
+  authProvider?: string;
 }
 
 interface AuthState {

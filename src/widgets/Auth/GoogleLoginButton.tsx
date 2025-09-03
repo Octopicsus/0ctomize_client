@@ -62,7 +62,6 @@ export default function GoogleLoginButton({ onSuccess, onError }: GoogleLoginBut
                 text="continue_with"
                 theme="filled_black"
                 size="large"
-                width="100%"
             />
         </GoogleLoginWrapper>
     );

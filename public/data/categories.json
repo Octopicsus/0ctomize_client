@@ -53,7 +53,7 @@
     {
       "title": "Other",
       "img": "/img/taxes_category.svg",
-      "color": "#d5c774"
+  "color": "#bfc3c4"
     }
   ],
   "expense": [
@@ -180,7 +180,7 @@
     {
       "title": "Other",
       "img": "/img/taxes_category.svg",
-      "color": "#c2c2c2"
+  "color": "#8f9194"
     }
   ]
 }
